@@ -5,6 +5,10 @@ import {
     baseTheme,
     background,
   } from "@chakra-ui/react";
+
+import "@fontsource/roboto"; 
+import "@fontsource/roboto/300.css"; 
+import "@fontsource/roboto/700.css"
   
   
   
@@ -13,7 +17,7 @@ import {
       styles: {
         global: {
           "html, body": {
-            background: "#1A112C",
+            background: "white",
             cursor: "default",
             color: "white",
           },
@@ -75,8 +79,8 @@ import {
         },
       },
       fonts: {
-        body: "Helvetica Neue, sans-serif",
-        heading: "Helvetica Neue Light, sans-serif",
+        heading: "'Brown', -apple-system, system-ui, sans-serif",
+        body: "'Brown', -apple-system, system-ui, sans-serif",
       },
       components: {
       },
