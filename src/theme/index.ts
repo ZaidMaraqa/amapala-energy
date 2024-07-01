@@ -26,8 +26,8 @@ import "@fontsource/roboto/700.css"
             scrollbarWidth: "thin",
           },
           "::-webkit-scrollbar": {
-            width: "10px",
-            height: "10px",
+            width: "0px",
+            height: "0px",
           },
   
           "::-webkit-scrollbar-thumb": {
