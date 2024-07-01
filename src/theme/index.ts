@@ -19,7 +19,7 @@ import "@fontsource/roboto/700.css"
           "html, body": {
             background: "white",
             cursor: "default",
-            color: "white",
+            color: "black",
           },
           body: {
             color: "text",
