@@ -1,14 +1,18 @@
 'use client'
 import { ASSETS } from "@/assets";
+import CountryProfileCard from "@/components/countryProfileCard";
+import Footer from "@/components/footer";
+import HomeCards from "@/components/goToCards";
 import NavBar from "@/components/navbar";
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import SomeCard from "@/components/somCard";
+import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <Flex direction={'column'} h={'100vh'} w={'100vw'} overflow={'auto'} gap={'2rem'}>
+    <Flex direction={'column'} h={'100vh'} w={'100vw'} overflow={'auto'} gap={'8rem'}>
       <Box>
         <NavBar />
-        <Image src={ASSETS.placeholder} />
+        <Image src={ASSETS.placeholder} w={'100vw'} />
       </Box>
       <Flex direction={'row'} px={'2rem'} py={'2rem'} gap={'1rem'}>
         <Flex flex={3} justifyContent={'center'} alignItems={'center'} p={'1rem'}>
@@ -30,6 +34,50 @@ const Home = () => {
           </Flex>
         </Flex>
       </Flex>
+      <Flex direction={'column'} gap={'4rem'} mt={'4rem'}>
+        <Flex gap={'1rem'} direction={'column'}>
+          <Heading fontWeight={700} fontSize={'3rem'} lineHeight={'3.6rem'} textAlign={'center'}>Stay Informed, Stay Ahead</Heading>
+          <Text fontWeight={400} fontSize={'1.125rem'} lineHeight={'.2044rem'} textAlign={'center'}>Get the latest updates and insights on the Latin American energy sector</Text>
+        </Flex>
+        <Flex direction={'row'} gap={'1.5rem'} px={'2rem'}>
+          <Flex direction={'column'} flex={1} gap={'1rem'}>
+            <Flex flex={3}>
+              <CountryProfileCard
+                expertiseText="Expertise"
+                headingText="In-Depth Country Profiles and commentary"
+                descriptionText="Gain a deep understanding of the Latin American energy landscape with our expert country profile analysis."
+                buttonText="Learn More"
+                imageUrl={ASSETS.placeholder}
+              />
+            </Flex>
+            <Flex flex={1}>
+              <HomeCards />
+            </Flex>
+          </Flex>
+          <Flex flex={1} direction={'column'} gap={'1rem'}>
+            <Flex flex={2}>
+              <SomeCard
+              expertiseText="Entertainment"
+              headingText="Enjoy our Podcasts"
+              descriptionText="On the run? listen to our podcasts covering a wide variety of topics."
+              buttonText="Learn More"
+              imageUrl={ASSETS.placeholder}
+               />
+            </Flex>
+            <Flex flex={3}>
+              <CountryProfileCard
+                expertiseText="Discover"
+                headingText="Explore our Services"
+                descriptionText="Find out how AMAPALA can help you navigate the Latin American energy sector."
+                buttonText="Learn More"
+                imageUrl={ASSETS.placeholder}
+              />
+            </Flex>
+
+          </Flex>
+        </Flex>
+      </Flex>
+      <Footer />
     </Flex>
   );
 }
