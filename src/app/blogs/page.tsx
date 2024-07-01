@@ -10,7 +10,6 @@ import {
   SimpleGrid,
   Input,
   InputGroup,
-  InputRightElement,
   Image,
 } from "@chakra-ui/react";
 import Footer from "@/components/footer";
