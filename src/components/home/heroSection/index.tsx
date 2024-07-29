@@ -20,10 +20,10 @@ const HeroSection = () => {
                     whiteSpace={'pre-line'}
                 >
                     <Text as={'span'} >
-                        The Future
+                        Shaping
                     </Text>
                     <Text as={'span'} color='black' display={'block'} whiteSpace={'nowrap'}>
-                        of Sustainable
+                        Latin American
                     </Text>
                     <Text as={'span'} >
                         Energy
@@ -40,7 +40,7 @@ const HeroSection = () => {
                     </Flex>
                 </Button>
             </Flex>
-            <Image src={ASSETS.turbines} w={'40vw'} objectFit={'cover'} />
+            <Image src={ASSETS.turbines} w={'40vw'} objectFit={'cover'} display={['none', 'none', 'none', 'flex']} alt="solar panels"/>
         </Flex>
     )
 }

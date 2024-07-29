@@ -1,81 +1,49 @@
-import { Box, Container, SimpleGrid, Stack, Text, Link, useColorModeValue } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { ASSETS } from '@/assets';
+import { Stack, Text, Flex, Image, } from '@chakra-ui/react';
+import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import SocialIcon from './socialButton';
+import { navLinks1, navLinks2 } from '../../../public/constants';
+import NavLink from './navLink';
 
 const Footer = () => {
+
+    const socialIcons = [
+        { href: 'https://www.instagram.com', icon: <FaInstagram fontSize="1.5rem" />, label: 'instagram' },
+        { href: 'https://www.linkedin.com/company/amapala-energy-insights/about/', icon: <FaLinkedinIn fontSize="1.5rem" />, label: 'linkedin' },
+        { href: 'https://www.youtube.com', icon: <FaYoutube fontSize="1.5rem" />, label: 'youtube' }
+    ];
+
     return (
-        <Box
-            // bg={useColorModeValue('gray.50', 'gray.900')}
-            // color={useColorModeValue('gray.700', 'gray.200')}
-        >
-            <Container as={Stack} maxW={'6xl'} py={10}>
-                <SimpleGrid columns={{ base: 1, sm: 2, md: 5 }} spacing={8}>
-                    <Stack align={'flex-start'}>
-                        <Text fontWeight={'bold'}>Logo</Text>
+        <Flex direction={'column'} gap={'4rem'} py={'3rem'} px={'1rem'}>
+            <Flex direction={'row'} justifyContent={'space-between'}>
+                <Flex direction={'column'}>
+                    <Image src={ASSETS.amapala} alt='amapala logo' w={'12.5rem'} h={'6rem'} />
+                    <Text fontWeight={600} fontSize={'2.125rem'} textAlign={'center'} color={'#324853'}>AMAPALA</Text>
+                </Flex>
+                <Flex gap={'2rem'}>
+                    <Stack gap={'1rem'}>
+                        {navLinks1.map((link) => (
+                            <NavLink key={link.label} href={link.href} label={link.label}>
+                                {link.label}
+                            </NavLink>
+                        ))}
                     </Stack>
-                    <Stack align={'flex-start'}>
-                        <Text fontWeight={'bold'}>Column One</Text>
-                        <Link href={'#'}>Link One</Link>
-                        <Link href={'#'}>Link Two</Link>
-                        <Link href={'#'}>Link Three</Link>
-                        <Link href={'#'}>Link Four</Link>
-                        <Link href={'#'}>Link Five</Link>
+                    <Stack gap={'1rem'}>
+                        {navLinks2.map((link) => (
+                            <NavLink key={link.label} href={link.href} label={link.label}>
+                                {link.label}
+                            </NavLink>
+                        ))}
                     </Stack>
-                    <Stack align={'flex-start'}>
-                        <Text fontWeight={'bold'}>Column Two</Text>
-                        <Link href={'#'}>Link Six</Link>
-                        <Link href={'#'}>Link Seven</Link>
-                        <Link href={'#'}>Link Eight</Link>
-                        <Link href={'#'}>Link Nine</Link>
-                        <Link href={'#'}>Link Ten</Link>
-                    </Stack>
-                    <Stack align={'flex-start'}>
-                        <Text fontWeight={'bold'}>Column Three</Text>
-                        <Link href={'#'}>Link Eleven</Link>
-                        <Link href={'#'}>Link Twelve</Link>
-                        <Link href={'#'}>Link Thirteen</Link>
-                        <Link href={'#'}>Link Fourteen</Link>
-                        <Link href={'#'}>Link Fifteen</Link>
-                    </Stack>
-                    <Stack align={'flex-start'}>
-                        <Text fontWeight={'bold'}>Column Four</Text>
-                        <Link href={'#'}>Link Sixteen</Link>
-                        <Link href={'#'}>Link Seventeen</Link>
-                        <Link href={'#'}>Link Eighteen</Link>
-                        <Link href={'#'}>Link Nineteen</Link>
-                        <Link href={'#'}>Link Twenty</Link>
-                    </Stack>
-                </SimpleGrid>
-            </Container>
-            <Box py={10}>
-                <Container as={Stack} maxW={'6xl'} spacing={4} justify={'center'} align={'center'}>
-                    <Stack direction={'row'} spacing={6}>
-                        <Link href={'https://facebook.com'} isExternal>
-                            <FaFacebook />
-                        </Link>
-                        <Link href={'https://instagram.com'} isExternal>
-                            <FaInstagram />
-                        </Link>
-                        <Link href={'https://twitter.com'} isExternal>
-                            <FaTwitter />
-                        </Link>
-                        <Link href={'https://linkedin.com'} isExternal>
-                            <FaLinkedin />
-                        </Link>
-                        <Link href={'https://youtube.com'} isExternal>
-                            <FaYoutube />
-                        </Link>
-                    </Stack>
-                </Container>
-                <Container as={Stack} maxW={'6xl'} justify={'center'} align={'center'}>
-                    <Text>© 2024 Relume. All rights reserved.</Text>
-                    <Stack direction={'row'} spacing={6}>
-                        <Link href={'#'}>Privacy Policy</Link>
-                        <Link href={'#'}>Terms of Service</Link>
-                        <Link href={'#'}>Cookies Settings</Link>
-                    </Stack>
-                </Container>
-            </Box>
-        </Box>
+                </Flex>
+                <Flex direction="row" gap="1rem">
+                    {socialIcons.map((social) => (
+                        <SocialIcon key={social.href} href={social.href} icon={social.icon} label={social.label} />
+                    ))}
+                </Flex>
+            </Flex>
+            <Text color={'black'} fontWeight={600} fontSize={'1.25rem'} textAlign={'center'}>© 2024 AMAPALA Energy Insights Limited. All rights reserved.</Text>
+        </Flex>
     );
 }
 
