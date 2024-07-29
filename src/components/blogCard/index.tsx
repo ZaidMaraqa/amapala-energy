@@ -17,7 +17,7 @@ const BlogCard = ({
       boxShadow={"none"}
       border={"solid black .0625rem"}
     >
-      <Image src={image} alt="Blog Image" mb={4} />
+      <Image src={image} alt="Blog Image" mb={4} w={'300px'} height={'200px'} />
       <Stack direction="row" spacing={2} align="center">
         <Text
           fontWeight="bold"
