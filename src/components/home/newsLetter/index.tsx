@@ -1,9 +1,8 @@
-import React from 'react';
 import { Flex, Text } from "@chakra-ui/react";
-import "@fontsource/lexend";
 import NewsletterForm from './newsLetterForm';
+import "@fontsource/lexend";
 
-const NewsLetter: React.FC = () => {
+const NewsLetter = () => {
     return (
         <Flex direction={'column'} bg={'primeBlue'} justifyContent={'center'} px={'5rem'} py={'8rem'}>
             <Flex direction={'column'} gap={'1.5rem'} alignItems={'start'}>

@@ -37,16 +37,16 @@ const ContactUsForm = () => {
                         <Text color={'#201E43'} fontWeight={300} fontSize={'1.375rem'} lineHeight={'1.75rem'}>Get in touch and let us know how we can help.</Text>
                         <FormControl isInvalid={!!errors.subject && touched.subject} w={'25%'}>
                             <FormLabel htmlFor="subject">Subject</FormLabel>
-                            <Field as={Input} id="subject" name="subject" variant="filled" placeholder="Your subject" borderColor="#201E43" />
+                            <Field as={Input} id="subject" name="subject" variant="filled" placeholder="Your subject" borderColor="primeBlue" />
                             <FormErrorMessage>{errors.subject}</FormErrorMessage>
                         </FormControl>
                         <FormControl isInvalid={!!errors.request && touched.request} w={'50%'}>
                             <FormLabel htmlFor="request">Request</FormLabel>
-                            <Field as={Textarea} id="request" name="request" variant="filled" placeholder="Your Request" borderColor="#201E43"  />
+                            <Field as={Textarea} id="request" name="request" variant="filled" placeholder="Your Request" borderColor="primeBlue"  />
                             <FormErrorMessage>{errors.request}</FormErrorMessage>
                         </FormControl>
                         <Flex>
-                        <Button type="submit" bg={'#201E43'} color={'white'} px={'1.5rem'} py={'1rem'}>Submit</Button>
+                        <Button type="submit" bg={'primeBlue'} color={'white'} px={'1.5rem'} py={'1rem'}>Submit</Button>
                         </Flex>
                     </Flex>
                 </Form>

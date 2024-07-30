@@ -51,10 +51,10 @@ export const servicesData = [
   ];
 
   export const navLinks1 = [
-    { href: '#heroSection', label: 'Home' },
-    { href: '#aboutSection', label: 'About' },
-    { href: '#servicesSection', label: 'Our Services' },
-    { href: '#insightsSection', label: 'Latest Insights' }
+    { href: `${PAGES.HOME}#heroSection`, label: 'Home' },
+    { href: `${PAGES.HOME}#aboutSection`, label: 'About' },
+    { href: `${PAGES.HOME}#servicesSection`, label: 'Our Services' },
+    { href: `${PAGES.HOME}#insightsSection`, label: 'Latest Insights' }
   ];
 
   export const navLinks2 = [

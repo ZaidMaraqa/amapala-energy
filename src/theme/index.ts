@@ -70,9 +70,8 @@ export const theme: Theme = extendTheme(
         lightPurple: "#AD85FF",
         lightBlue: "#5698FF",
         lightGreen: "#4ECEC7",
-        primeBlue: "#1352BF",
+        primeBlue: "#03346E",
         primeGray: "#C8D0D6",
-
       },
     },
     fonts: {

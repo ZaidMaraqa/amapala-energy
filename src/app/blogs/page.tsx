@@ -7,10 +7,7 @@ import {
   Text,
   Button,
   Flex,
-  SimpleGrid,
-  Input,
-  InputGroup,
-  Image,
+  SimpleGrid
 } from "@chakra-ui/react";
 import Footer from "@/components/footer";
 import BlogCard from "@/components/blogCard";
@@ -150,7 +147,7 @@ const Blogs = () => {
           </SimpleGrid>
         </Container>
       </Box>
-      <Box bg="white" py={10}>
+      {/* <Box bg="white" py={10}>
         <Container maxW={"6xl"}>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
             <Stack spacing={4} textAlign={"left"} justify="center">
@@ -189,7 +186,7 @@ const Blogs = () => {
             </Box>
           </SimpleGrid>
         </Container>
-      </Box>
+      </Box> */}
       <Footer />
     </>
   );
