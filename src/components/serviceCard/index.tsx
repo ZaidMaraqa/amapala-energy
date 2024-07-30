@@ -16,7 +16,8 @@ const ServiceCard = ({
             _hover={{ bg: news ? 'primeGray' : 'white', cursor: 'pointer' }}
             p={'1rem'}
             role="group"
-        >            <CardBody display={'flex'} flexDirection={'column'} gap={'1.5rem'}>
+        >
+            <CardBody display={'flex'} flexDirection={'column'} gap={'1.5rem'}>
                 <Image
                     src={imagUrl}
                     alt='Green double couch with wooden legs'
