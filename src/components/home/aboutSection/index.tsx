@@ -15,10 +15,10 @@ const AboutSection = () => {
                 we help our clients and viewers <Text as={'span'} color={'black'}>navigate and understand</Text> the dynamics 
                 of a vibrant and <Text as={'span'} color={'black'}>ever-changing market.</Text> 
                 </Text>
-                <Button border={'1px solid'} borderColor={'primeBlue'} borderRadius={0} px={'2rem'} py={'1.5rem'} display={'flex'} alignItems={'center'} gap={'1rem'}>
-                    <Text color={'black'} fontWeight={700}>Learn More</Text>
-                    <Flex border={'1px solid'} borderRadius={'50%'} h={'1.5em'} w={'1.5rem'} justifyContent={'center'} alignItems={'center'} borderColor={'black'}>
-                        <MdOutlineArrowRight fontSize={'1.25rem'} color="black" />
+                <Button border={'1px solid'} borderColor={'primeBlue'} borderRadius={0} px={'2rem'} py={'1.5rem'} display={'flex'} alignItems={'center'} gap={'1rem'} _hover={{ bg: 'primeBlue'}} role="group">
+                    <Text color={'black'} fontWeight={700} _groupHover={{color: 'white'}}>Learn More</Text>
+                    <Flex border={'1px solid'} borderRadius={'50%'} h={'1.5em'} w={'1.5rem'} justifyContent={'center'} alignItems={'center'} borderColor={'black'} color="black" _groupHover={{color:'white', borderColor:'white'}}>
+                        <MdOutlineArrowRight fontSize={'1.25rem'}  />
                     </Flex>
                 </Button>
             </Flex>

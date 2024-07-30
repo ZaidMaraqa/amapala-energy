@@ -1,4 +1,5 @@
 import { ASSETS } from "@/assets";
+import { PAGES } from "@/config";
 
 
 export const servicesData = [
@@ -16,7 +17,7 @@ export const servicesData = [
     },
     {
       id: 'right',
-      imagUrl: ASSETS.solarPanels,
+      imagUrl: ASSETS.countryProfiles,
       title: 'Country Profiles',
       description: 'AMAPALA is the first news consultancy platform of its kind, covering the entirety of the Latin American energy and natural resource sector. Access and download our country-by-country insights here.'
     }
@@ -57,7 +58,7 @@ export const servicesData = [
   ];
 
   export const navLinks2 = [
-    { href: '#', label: 'Contact Us' },
+    { href: PAGES.CONTACT_US, label: 'Contact Us' },
     { href: '#', label: 'Privacy Policy' },
     { href: '#', label: 'Terms & Conditions' }
   ];

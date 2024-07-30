@@ -13,8 +13,8 @@ import {
   Image,
 } from "@chakra-ui/react";
 import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
 import BlogCard from "@/components/blogCard";
+import NavBar from "@/components/navbar";
 
 const Blogs = () => {
   return (

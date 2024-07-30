@@ -10,7 +10,6 @@ import {
   Link,
 } from "@chakra-ui/react";
 import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
 import {
   FaFacebook,
   FaInstagram,
@@ -18,6 +17,7 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
+import NavBar from "@/components/navbar";
 
 const BlogOverview = () => {
   const heading2Ref = useRef<HTMLHeadingElement>(null);
@@ -71,7 +71,7 @@ const BlogOverview = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar/>
       <Box bg="white" py={10}>
         <Container maxW="6xl">
           <Stack direction={{ base: "column", lg: "row" }} spacing={10}>

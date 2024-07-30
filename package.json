@@ -16,11 +16,13 @@
     "@fontsource/lexend": "^5.0.20",
     "@fontsource/roboto": "^5.0.13",
     "@tanstack/react-query": "^5.48.0",
+    "formik": "^2.4.6",
     "framer-motion": "^11.2.12",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.2.1"
+    "react-icons": "^5.2.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",

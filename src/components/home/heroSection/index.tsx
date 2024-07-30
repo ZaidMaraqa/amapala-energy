@@ -40,7 +40,7 @@ const HeroSection = () => {
                     </Flex>
                 </Button>
             </Flex>
-            <Image src={ASSETS.turbines} w={'40vw'} objectFit={'cover'} display={['none', 'none', 'none', 'flex']} alt="solar panels"/>
+            <Image src={ASSETS.oil} w={'40vw'} objectFit={'cover'} display={['none', 'none', 'none', 'flex']} alt="solar panels"/>
         </Flex>
     )
 }
