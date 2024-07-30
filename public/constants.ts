@@ -34,19 +34,19 @@ export const servicesData = [
       id: 'article2',
       imagUrl: ASSETS.turbines,
       title: 'Argentina Energy Transition',
-      description: 'Argentina is making strides in its energy transition, focusing on increasing the share of renewables in its energy mix and reducing dependency on fossil fuels.'
+      description: 'Argentina is making strides in its energy transition, focusing on increasing the share of renewables in its energy mix and reducing dependency on fossil fuels.',
     },
     {
       id: 'article3',
       imagUrl: ASSETS.turbines,
       title: 'Chile Solar Power Expansion',
-      description: 'Chile is rapidly expanding its solar power capacity, aiming to become one of the leading producers of solar energy in Latin America.'
+      description: 'Chile is rapidly expanding its solar power capacity, aiming to become one of the leading producers of solar energy in Latin America.',
     },
     {
       id: 'article4',
       imagUrl: ASSETS.turbines,
       title: 'Colombia Hydropower Developments',
-      description: 'Colombia is investing heavily in hydropower projects, leveraging its abundant water resources to boost renewable energy production.'
+      description: 'Colombia is investing heavily in hydropower projects, leveraging its abundant water resources to boost renewable energy production.',
     }
   ];
 

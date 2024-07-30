@@ -19,6 +19,7 @@ const NewsSection = () => {
                         imagUrl={article.imagUrl}
                         title={article.title}
                         description={article.description}
+                        news={true}
                     />
                 ))}
             </SimpleGrid>
