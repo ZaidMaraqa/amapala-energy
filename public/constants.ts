@@ -5,13 +5,13 @@ import { PAGES } from "@/config";
 export const servicesData = [
     {
       id: 'left',
-      imagUrl: ASSETS.solarPanels,
+      imagUrl: ASSETS.amapalaWithBg,
       title: 'Energy Leader Interviews',
       description: 'AMAPALA brings you exclusive discussions with industry leaders and experts, exploring what awaits the Latin American energy and natural resource sector.'
     },
     {
       id: 'middle',
-      imagUrl: ASSETS.solarPanels,
+      imagUrl: ASSETS.amapalaWithBg,
       title: 'AMAPALA Consulting',
       description: 'Whatever the country, whatever the sector, contact us to request a specialized report, tailored advice and insights. This is your gateway to a long and prosperous relationship with AMAPALA Energy Insights.'
     },

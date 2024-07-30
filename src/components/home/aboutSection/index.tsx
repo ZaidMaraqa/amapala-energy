@@ -5,11 +5,11 @@ import { MdOutlineArrowRight } from "react-icons/md";
 
 const AboutSection = () => {
     return (
-        <Flex direction={['column', 'column', 'column', 'row']} py={'5.5rem'} gap={'5rem'} maxH={'60rem'}>
-            <Image src={ASSETS.solarPanels}  w={'100%'} objectFit={'cover'} alt="solarPanels"/>
+        <Flex direction={['column', 'column', 'column', 'row']} py={'5.5rem'} gap={'5rem'} px={'.5rem'} maxH={'60rem'}>
+            <Image src={ASSETS.latinAmerica}  w={'100%'} objectFit={'cover'} alt="solarPanels" display={['none', 'none','none','flex']}/>
             <Flex direction={'column'} gap={'1.5rem'} alignItems={'start'} justifyContent={'space-between'}>
                 <Text fontFamily="'Lexend', sans-serif" fontWeight={500} fontSize={'1.5rem'} color={'#202122'}>About Us</Text>
-                <Text color={'primeBlue'} fontWeight={500} fontSize={['1rem', '2rem', '3rem', '4rem']} lineHeight={['1.5rem', '2.5rem', '3.5rem', '4.5rem']}>
+                <Text color={'primeBlue'} fontWeight={500} fontSize={['2rem', '2rem', '3rem', '3.5rem']} lineHeight={['2.5rem', '2.5rem', '3.5rem', '4.5rem']}>
                 Offering unique <Text as={'span'} color={'black'}>expertise</Text> and unparalleled <Text as={'span'} color={'black'}>insights</Text> across 
                 the whole of the Latin American <Text as={'span'} color={'black'}>energy and natural </Text> resource sector,
                 we help our clients and viewers <Text as={'span'} color={'black'}>navigate and understand</Text> the dynamics 

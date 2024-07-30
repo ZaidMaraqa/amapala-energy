@@ -15,12 +15,9 @@ const Footer = () => {
 
     return (
         <Flex direction={'column'} gap={'4rem'} py={'3rem'} px={'1rem'}>
-            <Flex direction={'row'} justifyContent={'space-between'}>
-                <Flex direction={'column'}>
-                    <Image src={ASSETS.amapala} alt='amapala logo' w={'12.5rem'} h={'6rem'} />
-                    <Text fontWeight={600} fontSize={'2.125rem'} textAlign={'center'} color={'#324853'}>AMAPALA</Text>
-                </Flex>
-                <Flex gap={'2rem'}>
+            <Flex direction={['column', 'column', 'row', 'row']} alignItems={['center', 'center','start','start']} gap={'2rem'}>
+                    <Image src={ASSETS.amapalaFull} alt='amapala logo' w={'8rem'} h={'5rem'} display={['none', 'nonr','flex','flex',]} />
+                <Flex gap={'2rem'} justifyContent={'center'} w={'100vw'}>
                     <Stack gap={'1rem'}>
                         {navLinks1.map((link) => (
                             <NavLink key={link.label} href={link.href} label={link.label}>

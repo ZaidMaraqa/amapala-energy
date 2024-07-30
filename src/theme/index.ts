@@ -36,12 +36,11 @@ export const theme: Theme = extendTheme(
       },
     },
     breakpoints: {
-      base: '0em',
-      sm: '18em',
-      md: '48em',
-      lg: '62em',
-      xl: '80em',
-      '2xl': '96em',
+      sm: '28rem',
+      md: '48rem',
+      lg: '80rem',
+      xl: '90rem',
+      '2xl': '96rem',
     },
     colors: {
       green: {

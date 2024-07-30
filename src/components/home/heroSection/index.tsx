@@ -8,15 +8,16 @@ const HeroSection = () => {
         <Flex
             direction={'row'}
             bg={'primeGray'}
-            justifyContent={'space-between'}
+            justifyContent={['space-between']}
             height={'90vh'}
+            w={'100vw'}
         >
-            <Flex direction={'column'} justifyContent={'center'} gap={'3rem'} alignItems={'start'} p={'1rem'} w={'60vw'}  px={'1rem'}>
+            <Flex direction={'column'} justifyContent={'center'} gap={'3rem'} alignItems={['center', 'center','center', 'start', 'start']} p={'1rem'} w={['100vw', '100vw', '100vw', '60vw']}  px={'1rem'}>
                 <Text
                     color={'primeBlue'}
                     fontWeight={600}
-                    fontSize={['2.5rem', '3.5rem', '5rem', '7.5rem']}
-                    lineHeight={['2.5rem', '3.5rem', '5rem', '6.5rem']}
+                    fontSize={['2.5rem', '4rem', '5rem', '6.5rem']}
+                    lineHeight={['2.5rem', '4rem', '5rem', '6.5rem']}
                     whiteSpace={'pre-line'}
                 >
                     <Text as={'span'} >
