@@ -5,8 +5,8 @@ import * as Yup from 'yup';
 import { Button, Flex, Input, FormControl, FormErrorMessage } from "@chakra-ui/react";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import "@fontsource/lexend";
+import { subscribe } from '@/hooks/useSubscribe';
 
-// Validation schema
 const validationSchema = Yup.object({
     email: Yup.string().email('Invalid email address').required('Email is required'),
 });
@@ -18,10 +18,14 @@ interface FormValues {
 const NewsletterForm: React.FC = () => {
     const initialValues: FormValues = { email: '' };
 
-    const onSubmit = (values: FormValues, { resetForm }: { resetForm: () => void }) => {
-        console.log("Form data", values);
-        // Perform any submission logic here
-        resetForm();
+    const onSubmit = async (values: FormValues, { resetForm }: { resetForm: () => void }) => {
+        try {
+            await subscribe(values.email);
+            console.log('Subscribed successfully!');
+            resetForm();
+        } catch (error) {
+            console.error('Error:', error);
+        }
     };
 
     return (
