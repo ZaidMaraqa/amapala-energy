@@ -16,8 +16,8 @@ const HeroSection = () => {
                 <Text
                     color={'primeBlue'}
                     fontWeight={600}
-                    fontSize={['2.5rem', '4rem', '5rem', '6.5rem']}
-                    lineHeight={['2.5rem', '4rem', '5rem', '6.5rem']}
+                    fontSize={['3rem', '5rem', '5rem', '6.5rem']}
+                    lineHeight={['3rem', '5rem', '5rem', '6.5rem']}
                     whiteSpace={'pre-line'}
                 >
                     <Text as={'span'} >
