@@ -3,4 +3,5 @@ export interface ServiceCardProps {
     title: string;
     description: string;
     news?: boolean;
+    blog?: boolean;
 }

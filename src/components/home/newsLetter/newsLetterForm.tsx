@@ -15,7 +15,8 @@ interface FormValues {
     email: string;
 }
 
-const NewsletterForm = () => {
+
+const NewsletterForm = ({ color = 'white'}) => {
     const initialValues: FormValues = { email: '' };
     const toast = useToast()
 
@@ -57,21 +58,23 @@ const NewsletterForm = () => {
                                 name="email"
                                 type="email"
                                 placeholder="Enter Your Email Address"
-                                border={'1px solid white'}
+                                border={'1px solid'}
+                                borderColor={color}
                                 borderRadius={0}
                                 fontFamily="'Lexend', sans-serif"
-                                color={'white'}
+                                color={color}
+                                _placeholder={{color: color}}
                             />
                             <FormErrorMessage>{errors.email}</FormErrorMessage>
                         </FormControl>
                         <Button
-                            bg={'white'}
+                            bg={color}
                             borderRadius={0}
-                            color={'black'}
+                            color={color ? 'black': 'white'}
                             fontWeight={700}
                             fontSize={'1rem'}
                             rightIcon={<MdOutlineMarkEmailUnread size={'1.2rem'} />}
-                            paddingX={'1.5rem'}
+                            paddingX={'2rem'}
                             paddingY={'1rem'}
                             type="submit"
                         >

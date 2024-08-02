@@ -1,6 +1,8 @@
 import ServiceCard from "@/components/serviceCard"
 import { Flex, SimpleGrid, Text } from "@chakra-ui/react"
 import { newsData } from "../../../../public/constants"
+import "@fontsource/lexend";
+
 
 const NewsSection = () => {
     return (
@@ -19,6 +21,8 @@ const NewsSection = () => {
                         imagUrl={article.imagUrl}
                         title={article.title}
                         description={article.description}
+                        category={article.category}
+                        readTime={article.readTime}
                         news={true}
                     />
                 ))}

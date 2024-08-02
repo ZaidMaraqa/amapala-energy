@@ -28,25 +28,33 @@ export const servicesData = [
       id: 'article1',
       imagUrl: ASSETS.turbines,
       title: 'Renewable Energy Growth in Brazil',
-      description: 'Brazil continues to lead the way in renewable energy investments, with significant growth in wind and solar projects over the past year.'
+      description: 'Brazil continues to lead the way in renewable energy investments, with significant growth in wind and solar projects over the past year.',
+      category: 'category',
+      readTime: 5
     },
     {
       id: 'article2',
       imagUrl: ASSETS.turbines,
       title: 'Argentina Energy Transition',
       description: 'Argentina is making strides in its energy transition, focusing on increasing the share of renewables in its energy mix and reducing dependency on fossil fuels.',
+      category: 'category',
+      readTime: 5
     },
     {
       id: 'article3',
       imagUrl: ASSETS.turbines,
       title: 'Chile Solar Power Expansion',
       description: 'Chile is rapidly expanding its solar power capacity, aiming to become one of the leading producers of solar energy in Latin America.',
+      category: 'category',
+      readTime: 5
     },
     {
       id: 'article4',
       imagUrl: ASSETS.turbines,
       title: 'Colombia Hydropower Developments',
       description: 'Colombia is investing heavily in hydropower projects, leveraging its abundant water resources to boost renewable energy production.',
+      category: 'category',
+      readTime: 5
     }
   ];
 
@@ -59,7 +67,7 @@ export const servicesData = [
 
   export const navLinks2 = [
     { href: PAGES.CONTACT_US, label: 'Contact Us' },
-    { href: PAGES, label: 'Blogs' },
+    { href: PAGES.BLOGS, label: 'Blogs' },
     { href: '#', label: 'Country Profiles' }
   ];
 

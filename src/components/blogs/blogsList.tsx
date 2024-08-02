@@ -3,6 +3,7 @@
 import { SimpleGrid, Flex, Spinner } from "@chakra-ui/react";
 import BlogCard from "@/components/blogCard";
 import getBlogs from "@/hooks/getAllBlogs";
+import ServiceCard from "../serviceCard";
 
 const BlogList = () => {
   const { data, error, isLoading } = getBlogs();
@@ -13,14 +14,14 @@ const BlogList = () => {
   return (
     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
       {data.map((blog: any, index: number) => (
-        <BlogCard
+        <ServiceCard
           key={index}
-          image={blog.image}
+          imagUrl={blog.image}
           category={blog.category}
           readTime={blog.readTime}
           title={blog.title}
           description={blog.description}
-          link={blog.link}
+          blog={true}
         />
       ))}
     </SimpleGrid>

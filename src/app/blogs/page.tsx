@@ -1,15 +1,15 @@
 import {
   Box,
-  Container,
-  Stack,
   Heading,
   Text,
-  Button,
   Flex
 } from "@chakra-ui/react";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import dynamic from 'next/dynamic';
+import "@fontsource/lexend";
+
+import BlogNewsLetter from "@/components/blogs/blogNewsLetter";
 
 const TopBlogList = dynamic(() => import('@/components/blogs/TopBlogsList'), { ssr: false });
 const BlogList = dynamic(() => import('@/components/blogs/blogsList'), { ssr: false });
@@ -17,45 +17,23 @@ const BlogList = dynamic(() => import('@/components/blogs/blogsList'), { ssr: fa
 const Blogs = () => {
   return (
     <>
-      <NavBar />
-      <Box bg="white" py={10}>
-        <Container maxW={"6xl"}>
-          <Flex
-            direction={{ base: "column", md: "row" }}
-            justify="space-between"
-            align={{ base: "flex-start", md: "center" }}
-          >
-            <Stack spacing={4} textAlign={"left"} mb={{ base: 4, md: 0 }}>
-              <Heading fontSize={"3xl"}>
-                Discover the Latest Energy Trends
-              </Heading>
-              <Text color={"gray.600"} fontSize={"lg"}>
-                Stay informed with our insightful blog posts.
-              </Text>
-            </Stack>
-            <Button
-              colorScheme="black"
-              variant="outline"
-              alignSelf={{ base: "flex-start", md: "center" }}
-            >
-              View All
-            </Button>
-          </Flex>
-        </Container>
-      </Box>
-      <Container maxW={"6xl"} mt={10}>
-      <TopBlogList />
-      </Container>
-      <Box bg="white" py={10}>
-        <Container maxW={"6xl"}>
-          <Stack spacing={4} textAlign={"center"}>
-            <Heading fontSize={"3xl"}>Discover the Latest Insights</Heading>
-            <Text color={"gray.600"} fontSize={"lg"} mb={10}>
-              Stay informed with our in-depth analysis and exclusive interviews
-            </Text>
-          </Stack>
-          <BlogList />
-        </Container>
+      <NavBar bg="#F2F2F2" />
+      <Flex bg="#F2F2F2" direction={'column'} my={'3rem'} p={'3rem'} gap={'2rem'}>
+        <Heading fontSize={'4.625rem'} fontWeight={600}>Trending Topics</Heading>
+        <Box p={'1rem'}>
+          <TopBlogList />
+          <BlogNewsLetter />
+        </Box>
+      </Flex>
+      <Box bg="primeGray" py={'5rem'} px={'3rem'}>
+        <Text fontFamily="'Lexend', sans-serif" fontSize={'1.5rem'} fontWeight={500} color={'#202122'}>
+          Blogs
+        </Text>
+        <Text color={'primeBlue'} fontWeight={600} fontSize={['1.375rem', '2.775rem', '3.575rem', '4.375rem', '5.375rem']}>
+          Discover <Text as={'span'} color={'black'}>The</Text> <br />
+          <Text as={'span'} color={'black'}>Latest</Text> Insights
+        </Text>
+        <BlogList />
       </Box>
       <Footer />
     </>

@@ -1,8 +1,8 @@
 'use client';
 
-import { SimpleGrid, Flex, Spinner } from "@chakra-ui/react";
-import BlogCard from "@/components/blogCard";
+import { SimpleGrid, Flex, Spinner, Divider, Box } from "@chakra-ui/react";
 import getTopBlogs from "@/hooks/getTopBlogs";
+import TopBlogCard from "./TopBlogCard";
 
 const BlogList = () => {
   const { data, error, isLoading } = getTopBlogs();
@@ -11,17 +11,19 @@ const BlogList = () => {
   if (error) return <div>Failed to load data</div>;
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+    <SimpleGrid columns={1} spacing={10}>
       {data.map((blog: any, index: number) => (
-        <BlogCard
-          key={index}
-          image={blog.image}
-          category={blog.category}
-          readTime={blog.readTime}
-          title={blog.title}
-          description={blog.description}
-          link={blog.link}
-        />
+        <Box key={index}>
+          <TopBlogCard
+            image={blog.image}
+            category={blog.category}
+            readTime={blog.readTime}
+            title={blog.title}
+            description={blog.description}
+            link={blog.link}
+          />
+            <Divider borderColor="#8A9BA8" borderWidth=".0625rem" my={5} />
+        </Box>
       ))}
     </SimpleGrid>
   );
