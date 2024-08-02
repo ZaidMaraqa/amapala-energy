@@ -1,4 +1,4 @@
-import useSWR, { mutate } from 'swr';
+import { mutate } from 'swr';
 
 const subscribeFetcher = async (url: string, email: string) => {
     const response = await fetch(url, {

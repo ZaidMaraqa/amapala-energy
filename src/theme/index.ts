@@ -4,6 +4,7 @@ import {
   withDefaultColorScheme,
   baseTheme,
 } from "@chakra-ui/react";
+import { AlertStyles } from './components/alert';
 
 export const theme: Theme = extendTheme(
   {
@@ -78,6 +79,7 @@ export const theme: Theme = extendTheme(
       body: "'General Sans', -apple-system, system-ui, sans-serif",
     },
     components: {
+      Alert: AlertStyles,
     },
     config: {
       initialColorMode: "dark",
