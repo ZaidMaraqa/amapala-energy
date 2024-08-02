@@ -1,9 +1,9 @@
-import Footer from "@/components/footer";
+import ServicesSection from "@/components/home/servicesSection.tsx";
 import AboutSection from "@/components/home/aboutSection";
 import HeroSection from "@/components/home/heroSection";
-import NewsLetter from "@/components/home/newsLetter";
 import NewsSection from "@/components/home/newsSection";
-import ServicesSection from "@/components/home/servicesSection.tsx";
+import NewsLetter from "@/components/home/newsLetter";
+import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import { Flex } from "@chakra-ui/react";
 

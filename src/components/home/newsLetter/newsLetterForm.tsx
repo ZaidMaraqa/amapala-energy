@@ -28,7 +28,6 @@ const NewsletterForm = () => {
                 description: "Your email has been added to our newsletter.",
                 status: 'success',
                 duration: 9000,
-                isClosable: true,
               })
             resetForm();
         } catch (error) {
@@ -38,7 +37,6 @@ const NewsletterForm = () => {
                 description: "Your email is already in our newsletter.",
                 status: 'error',
                 duration: 9000,
-                isClosable: true,
               })
         }
     };
