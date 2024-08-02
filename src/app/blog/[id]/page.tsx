@@ -24,7 +24,6 @@ import getBlog from "@/hooks/getBlog";
 
 const BlogOverview = ({ params }: {params: { id: number }}) => {
   const id = params.id
-
   const { data, isLoading, error } = getBlog()
 
   if (isLoading) return <Flex h={'100vh'} w={'100vw'} justifyContent={'center'} alignItems={'center'}><Spinner thickness='0.25rem' speed='0.55s' emptyColor='gray.200' color='primeBlue' size='xl' /></Flex>;
