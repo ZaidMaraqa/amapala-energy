@@ -20,7 +20,7 @@ const BlogList = () => {
             readTime={blog.readTime}
             title={blog.title}
             description={blog.description}
-            link={blog.link}
+            id={blog.id}
           />
             <Divider borderColor="#8A9BA8" borderWidth=".0625rem" my={5} />
         </Box>

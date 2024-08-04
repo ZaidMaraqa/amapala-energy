@@ -67,7 +67,7 @@ export const servicesData = [
 
   export const navLinks2 = [
     { href: PAGES.CONTACT_US, label: 'Contact Us' },
-    { href: PAGES.BLOGS, label: 'Blogs' },
+    { href: PAGES.BLOGS, label: 'Articles' },
     { href: '#', label: 'Country Profiles' }
   ];
 

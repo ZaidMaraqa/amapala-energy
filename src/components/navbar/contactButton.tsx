@@ -8,8 +8,8 @@ const ContactUsButton = () => {
     const { push } = useRouter()
     
     return (
-        <Button bg={'primeBlue'} borderRadius={'10px'} color={'white'} _hover={{ bg: 'white', color: 'primeBlue' }} onClick={() => push(PAGES.CONTACT_US)} py={0} h={'2.3rem'}>
-            <Text fontSize={'15px'}>Contact Us</Text>
+        <Button bg={'primeBlue'} borderRadius={'md'} border={'.0625rem solid'} color={'white'} _hover={{ bg: 'transparent', color: 'primeBlue', border: '.0625rem solid', borderColor: 'primeBlue' }} onClick={() => push(PAGES.CONTACT_US)} py={0} h={'36.8px'}>
+            <Text fontSize={'.9375rem'}>Contact Us</Text>
         </Button>
     )
 }

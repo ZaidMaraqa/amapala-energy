@@ -1,51 +1,51 @@
 [
     {
+      "id": 1,
       "image": "https://via.placeholder.com/300",
       "category": "Category",
       "readTime": "5 min read",
       "title": "The Future of Renewable Energy",
-      "description": "Learn about the latest advancements in renewable energy sources.",
-      "link": "#"
+      "description": "Learn about the latest advancements in renewable energy sources."
     },
     {
+      "id": 2,
       "image": "https://via.placeholder.com/300",
       "category": "Category",
       "readTime": "5 min read",
       "title": "The Impact of Oil Prices on Latin America",
-      "description": "Explore the effects of fluctuating oil prices on the Latin American economy.",
-      "link": "#"
+      "description": "Explore the effects of fluctuating oil prices on the Latin American economy."
     },
     {
+      "id": 3,
       "image": "https://via.placeholder.com/300",
       "category": "Category",
       "readTime": "5 min read",
       "title": "The Future of Lithium Mining in South America",
-      "description": "Discover the potential of lithium mining projects in South America.",
-      "link": "#"
+      "description": "Discover the potential of lithium mining projects in South America."
     },
     {
+      "id": 4,
       "image": "https://via.placeholder.com/300",
       "category": "Renewables",
       "readTime": "7 min read",
       "title": "The Impact of Oil Prices on Latin American Economies",
-      "description": "Learn how fluctuating oil prices affect the economies of Latin American countries.",
-      "link": "#"
+      "description": "Learn how fluctuating oil prices affect the economies of Latin American countries."
     },
     {
+      "id": 5,
       "image": "https://via.placeholder.com/300",
       "category": "Oil",
       "readTime": "6 min read",
       "title": "The Role of Natural Gas in Latin America's Energy Transition",
-      "description": "Discover how natural gas is shaping the energy transition in Latin America.",
-      "link": "#"
+      "description": "Discover how natural gas is shaping the energy transition in Latin America."
     },
     {
+      "id": 6,
       "image": "https://via.placeholder.com/300",
       "category": "Natural Gas",
       "readTime": "8 min read",
       "title": "The Potential of Lithium Mining in Latin America",
-      "description": "Uncover the opportunities and challenges of lithium mining in Latin America.",
-      "link": "#"
+      "description": "Uncover the opportunities and challenges of lithium mining in Latin America."
     }
   ]
   

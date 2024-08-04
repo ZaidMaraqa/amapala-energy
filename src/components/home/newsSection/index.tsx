@@ -3,7 +3,6 @@ import { Flex, SimpleGrid, Text } from "@chakra-ui/react"
 import { newsData } from "../../../../public/constants"
 import "@fontsource/lexend";
 
-
 const NewsSection = () => {
     return (
         <Flex direction={'column'} justifyContent={'flex-start'} gap={'2rem'} py={['2rem', '4rem', '6rem', '6rem']} px={['.5rem', '1rem', '2rem', '2rem']}>

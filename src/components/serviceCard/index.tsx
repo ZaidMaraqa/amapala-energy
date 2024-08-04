@@ -2,6 +2,7 @@ import { Box, Card, CardBody, CardFooter, Flex, Heading, IconButton, Image, Text
 import { FaChevronRight } from "react-icons/fa";
 import { ServiceCardProps } from "./serviceCard.interface";
 import "@fontsource/lexend";
+import CardHeader from "../cardHeader";
 
 const ServiceCard = ({
     imagUrl,
@@ -24,18 +25,13 @@ const ServiceCard = ({
                 <Image
                     src={imagUrl}
                     alt='service image'
-                    h={'300px'}
+                    h={'18.75rem'}
                     w={'100%'}
                     objectFit={'cover'}
                 />
                 <Flex direction={'column'} gap={'1.5rem'} mt={'1rem'}>
                     {blog && (
-                        <Flex direction={'row'} fontSize={'1.25rem'} lineHeight={'1.5rem'} fontWeight={600} gap={'.5rem'} alignItems={'center'}>
-                            <Box bg={'primeBlue'} borderRadius={'.3125rem'} p={'.5rem'}>
-                                <Text color={'white'}>{category}</Text>
-                            </Box>
-                            <Text color={'black'}>{readTime}</Text>
-                        </Flex>
+                        <CardHeader category={category} readTime={readTime} />
                     )}
                     <Heading color={'black'} fontWeight={600} fontSize={'1.5rem'}>{title}</Heading>
                     <Text color={'#202122'} fontFamily="'Lexend', sans-serif" fontSize={'1rem'}>
