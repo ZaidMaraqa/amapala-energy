@@ -19,6 +19,7 @@ interface FormValues {
 const NewsletterForm = ({ color = 'white'}) => {
     const initialValues: FormValues = { email: '' };
     const toast = useToast()
+    const newColor = color !== 'white'
 
     const onSubmit = async (values: FormValues, { resetForm }: { resetForm: () => void }) => {
         try {
@@ -70,7 +71,7 @@ const NewsletterForm = ({ color = 'white'}) => {
                         <Button
                             bg={color}
                             borderRadius={0}
-                            color={color ? 'black': 'white'}
+                            color={newColor ? 'white': 'black'}
                             fontWeight={700}
                             fontSize={'1rem'}
                             rightIcon={<MdOutlineMarkEmailUnread size={'1.2rem'} />}

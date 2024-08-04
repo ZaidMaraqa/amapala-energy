@@ -1,7 +1,6 @@
 'use client';
 
 import { SimpleGrid, Flex, Spinner } from "@chakra-ui/react";
-import BlogCard from "@/components/blogCard";
 import getBlogs from "@/hooks/getAllBlogs";
 import ServiceCard from "../serviceCard";
 
@@ -12,7 +11,7 @@ const BlogList = () => {
   if (error) return <div>Failed to load data</div>;
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+    <SimpleGrid columns={[1,1,2,3, 4]} spacing={10} mt={'1rem'}>
       {data.map((blog: any, index: number) => (
         <ServiceCard
           key={index}

@@ -23,7 +23,7 @@ const ServiceCard = ({
             <CardBody display={'flex'} flexDirection={'column'} gap={'1.5rem'}>
                 <Image
                     src={imagUrl}
-                    alt='Green double couch with wooden legs'
+                    alt='service image'
                     h={'300px'}
                     w={'100%'}
                     objectFit={'cover'}
