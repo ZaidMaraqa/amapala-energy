@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     try{
         const { email } = await req.json()
 
-        const response = await fetch(`${config.apiUrl}/newsletter/subscribe`, {
+        const response = await fetch(`${config.apiUrl}/newsletter`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -5,7 +5,7 @@ import getBlogs from "@/hooks/getAllBlogs";
 import ServiceCard from "../serviceCard";
 
 const BlogList = () => {
-  const { data, error, isLoading } = getBlogs();
+  const { data, error, isLoading } = getBlogs(1);
 
   if (isLoading) return <Flex h={'10rem'} justifyContent={'center'} alignItems={'center'}><Spinner thickness='0.25rem' speed='0.55s' emptyColor='gray.200' color='primeBlue' size='xl' /></Flex>;
   if (error) return <div>Failed to load data</div>;

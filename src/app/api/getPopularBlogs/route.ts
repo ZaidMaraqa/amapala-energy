@@ -1,6 +1,29 @@
+import config from '@/config';
 import { NextResponse, NextRequest } from 'next/server';
 
 
-export async function GET(request: NextRequest) {
+export async function GET() {
+    try{
+        const response = await fetch(`${config.apiUrl}/popular-blogs`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to subscribe');
+        }
+
+        return response
+    } catch (err) {
+        return NextResponse.json(
+          {
+            success: false,
+            message: 'Something went wrong',
+          },
+          { status: 500 }
+        )
+      }
     
 }

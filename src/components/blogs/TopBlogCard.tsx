@@ -11,7 +11,7 @@ export interface BlogCardProps {
     readTime: number;
     title: string;
     description: string;
-    id: number
+    _id: string
 }
 
 const TopBlogCard = ({ image,
@@ -19,10 +19,10 @@ const TopBlogCard = ({ image,
     readTime,
     title,
     description,
-    id
+    _id
 }: BlogCardProps) => {
     return (
-        <Link href={`${PAGES.BLOG}/${id}`}>
+        <Link href={`${PAGES.BLOG}/${_id}`}>
             <Card direction={'row'} bg={'transparent'} boxShadow={0} role="group" _hover={{ cursor: 'pointer' }}>
                 <CardBody>
                     <Flex direction={'column'} gap={'8px'}>

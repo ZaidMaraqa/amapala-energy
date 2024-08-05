@@ -1,8 +1,8 @@
 import useSWR from "swr"
 import { fetcher } from "./fetcher"
 
-export default function getBlogs () {
-    const { data, error, isLoading } = useSWR('/allblogs.json', fetcher)
+export default function getBlogs (pageIndex: number) {
+    const { data, error, isLoading } = useSWR(`/api/getBlogs?pageIndex=${pageIndex}`, fetcher)
     return {
       data,
       isLoading,
