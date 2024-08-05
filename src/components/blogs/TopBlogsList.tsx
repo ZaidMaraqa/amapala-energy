@@ -2,7 +2,7 @@
 
 import { SimpleGrid, Flex, Spinner, Divider, Box } from "@chakra-ui/react";
 import getTopBlogs from "@/hooks/getTopBlogs";
-import TopBlogCard from "./TopBlogCard";
+import TopBlogCard, { BlogCardProps } from "./TopBlogCard";
 
 const BlogList = () => {
   const { data, error, isLoading } = getTopBlogs();
@@ -12,7 +12,7 @@ const BlogList = () => {
 
   return (
     <SimpleGrid columns={1} spacing={10}>
-      {data.map((blog: any, index: number) => (
+      {data.slice(0, 2).map((blog: BlogCardProps, index: number) => (
         <Box key={index}>
           <TopBlogCard
             image={blog.image}
@@ -22,7 +22,7 @@ const BlogList = () => {
             description={blog.description}
             _id={blog._id}
           />
-            <Divider borderColor="#8A9BA8" borderWidth=".0625rem" my={5} />
+          <Divider borderColor="#8A9BA8" borderWidth=".0625rem" my={5} />
         </Box>
       ))}
     </SimpleGrid>

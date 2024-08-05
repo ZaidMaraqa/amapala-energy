@@ -1,6 +1,5 @@
-import ServiceCard from "@/components/serviceCard"
-import { Flex, SimpleGrid, Text } from "@chakra-ui/react"
-import { newsData } from "../../../../public/constants"
+import { Flex, Text } from "@chakra-ui/react"
+import NewsGrid from "./newsGrid";
 import "@fontsource/lexend";
 
 const NewsSection = () => {
@@ -13,19 +12,7 @@ const NewsSection = () => {
                 Stay <Text as={'span'} color={'black'}>Informed</Text> <br />
                 <Text as={'span'} color={'black'}>Stay</Text> Ahead
             </Text>
-            <SimpleGrid columns={[1, 2, 2]} spacing={5}>
-                {newsData.map(article => (
-                    <ServiceCard
-                        key={article.id}
-                        imagUrl={article.imagUrl}
-                        title={article.title}
-                        description={article.description}
-                        category={article.category}
-                        readTime={article.readTime}
-                        news={true}
-                    />
-                ))}
-            </SimpleGrid>
+            <NewsGrid />            
         </Flex>
     )
 }

@@ -5,13 +5,14 @@ import "@fontsource/lexend";
 import CardHeader from "../cardHeader";
 
 const ServiceCard = ({
-    imagUrl,
+    imageUrl,
     title,
     description,
     news,
     blog,
     category,
     readTime,
+    _id
 }: ServiceCardProps) => {
     return (
         <Card
@@ -23,14 +24,14 @@ const ServiceCard = ({
         >
             <CardBody display={'flex'} flexDirection={'column'} gap={'1.5rem'}>
                 <Image
-                    src={imagUrl}
+                    src={imageUrl}
                     alt='service image'
                     h={'18.75rem'}
                     w={'100%'}
                     objectFit={'cover'}
                 />
                 <Flex direction={'column'} gap={'1.5rem'} mt={'1rem'}>
-                    {blog && (
+                    {blog && category && readTime && (
                         <CardHeader category={category} readTime={readTime} />
                     )}
                     <Heading color={'black'} fontWeight={600} fontSize={'1.5rem'}>{title}</Heading>

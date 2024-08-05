@@ -18,7 +18,7 @@ const ServicesSection = () => {
                 {servicesData.map(service => (
                     <ServiceCard 
                         key={service.id}
-                        imagUrl={service.imagUrl}
+                        imageUrl={service.imagUrl}
                         title={service.title}
                         description={service.description}
                     />

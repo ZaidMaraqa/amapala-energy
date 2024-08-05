@@ -1,9 +1,10 @@
 export interface ServiceCardProps {
-    imagUrl: string;
+    imageUrl: string;
+    _id?: string;
     title: string;
     description: string;
-    category: string;
-    readTime: number;
+    category?: string;
+    readTime?: number;
     news?: boolean;
     blog?: boolean;
 }
