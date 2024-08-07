@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import { SimpleGrid, Flex, Spinner, Divider, Box } from "@chakra-ui/react";
 import getTopBlogs from "@/hooks/getTopBlogs";

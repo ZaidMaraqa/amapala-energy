@@ -6,11 +6,10 @@ import NewsLetter from "@/components/home/newsLetter";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import { Flex } from "@chakra-ui/react";
-import posthog from "posthog-js";
+import { useRouter } from "next/navigation";
 
 const Home = () => {
-  // console.log(posthog)
-  // posthog.capture('my event', { property: 'value' })
+  const router = useRouter()
   return (
     <Flex direction={'column'} w={'100vw'} overflow={'auto'}>
       <NavBar />

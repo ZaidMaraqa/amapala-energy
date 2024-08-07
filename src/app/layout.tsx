@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <CSPostHogProvider>
-      <body>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
+        <body>
+          <Providers>
+            {children}
+          </Providers>
+        </body>
       </CSPostHogProvider>
     </html>
   );
