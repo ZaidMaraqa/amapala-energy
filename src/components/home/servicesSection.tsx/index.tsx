@@ -1,8 +1,7 @@
 import { Flex, SimpleGrid, Text } from "@chakra-ui/react"
 import "@fontsource/lexend";
 import { servicesData } from "../../../../public/constants";
-import ServiceCard from "@/components/serviceCard";
-
+import ServiceCard from "../serviceCard";
 
 const ServicesSection = () => {
     return (

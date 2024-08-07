@@ -2,7 +2,7 @@
 
 import { SimpleGrid, Flex, Spinner } from "@chakra-ui/react";
 import getBlogs from "@/hooks/getAllBlogs";
-import ServiceCard from "../serviceCard";
+import ServiceCard from "../home/serviceCard";
 import { useState } from "react";
 import Paginator from "../paginator";
 

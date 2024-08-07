@@ -2,7 +2,7 @@ import { Box, Card, CardBody, CardFooter, Flex, Heading, IconButton, Image, Text
 import { FaChevronRight } from "react-icons/fa";
 import { ServiceCardProps } from "./serviceCard.interface";
 import "@fontsource/lexend";
-import CardHeader from "../cardHeader";
+import CardHeader from "../../cardHeader";
 
 const ServiceCard = ({
     imageUrl,
