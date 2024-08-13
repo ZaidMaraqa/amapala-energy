@@ -1,10 +1,12 @@
 import {
   Theme,
+  baseTheme,
   extendTheme,
   withDefaultColorScheme,
-  baseTheme,
 } from "@chakra-ui/react";
+
 import { AlertStyles } from './components/alert';
+import { CheckBoxStyle } from "./components/checkboxes";
 
 export const theme: Theme = extendTheme(
   {
@@ -80,6 +82,7 @@ export const theme: Theme = extendTheme(
     },
     components: {
       Alert: AlertStyles,
+      Checkbox: CheckBoxStyle,
     },
     config: {
       initialColorMode: "dark",

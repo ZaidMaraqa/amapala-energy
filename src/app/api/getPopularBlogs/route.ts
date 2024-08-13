@@ -1,6 +1,5 @@
+import { NextResponse } from 'next/server';
 import config from '@/config';
-import { NextResponse, NextRequest } from 'next/server';
-
 
 export async function GET() {
     try{

@@ -9,6 +9,7 @@ export const ASSETS = {
     countryProfiles: '/assets/countryProfiles.jpg',
     latinAmerica: '/assets/latinAmerica.png',
     icons: {
-        pageNotFound: '/assets/pageNotFound.svg'
+        pageNotFound: '/assets/pageNotFound.svg',
+        filters: '/assets/filters.svg',
     },
 };
