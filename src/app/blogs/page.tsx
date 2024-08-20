@@ -4,7 +4,6 @@ import {
   Box,
   Flex,
   Heading,
-  Text
 } from "@chakra-ui/react";
 
 import BlogNewsLetter from "@/components/blogs/blogNewsLetter";
@@ -19,12 +18,12 @@ const Blogs = () => {
   return (
     <>
       <NavBar bg="#F2F2F2" />
-      <Flex bg="#F2F2F2" direction={'column'} my={'3rem'} p={['0rem', '.5rem', '1.5rem', '3rem']} gap={'2rem'}>
+      <Flex bg="#F2F2F2" direction={'column'} mb={'3rem'} p={['0rem', '.5rem', '1.5rem', '3rem']} gap={'2rem'}>
         <Heading fontSize={['2rem', '2.75rem', '3.625rem', '4.625rem']} fontWeight={600}>Trending Topics</Heading>
-        <Box p={'1rem'}>
+        <Flex p={'1rem'} direction={'column'} gap={'3rem'}>
           <TopBlogList />
           <BlogNewsLetter />
-        </Box>
+        </Flex>
       </Flex>
       <BlogList />
       <Footer />

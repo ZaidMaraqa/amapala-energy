@@ -1,8 +1,9 @@
-import useSWR from "swr"
+import config from "@/config"
 import { fetcher } from "./fetcher"
+import useSWR from "swr"
 
 export default function getTopBlogs () {
-    const { data, error, isLoading } = useSWR('/api/getPopularBlogs', fetcher)
+    const { data, error, isLoading } = useSWR(`${config.apiUrl}/popular-blogs`, fetcher)
     return {
       data,
       isLoading,

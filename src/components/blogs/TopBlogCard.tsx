@@ -1,9 +1,11 @@
-import { Box, Card, CardBody, CardFooter, Flex, IconButton, Image, Text } from "@chakra-ui/react"
 import "@fontsource/lexend";
-import { FaChevronRight } from "react-icons/fa";
+
+import { Box, Card, CardBody, CardFooter, Flex, IconButton, Image, Text } from "@chakra-ui/react"
+import config, { PAGES } from "@/config";
+
 import CardHeader from "../cardHeader";
+import { FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
-import { PAGES } from "@/config";
 
 export interface BlogCardProps {
     image: string;
@@ -44,7 +46,7 @@ const TopBlogCard = ({ image,
                         </Flex>
                     </CardFooter>
                 </CardBody>
-                <Image src={image} alt="blog image" w={['240px', '240px', '200px', '240px']} display={['none', 'none', 'flex', 'flex']} />
+                <Image src={`${config.apiUrl}${image}`} alt="blog image" w={'300px'}  objectFit={'contain'} display={['none', 'none', 'flex', 'flex']} />
             </Card>
         </Link>
     )

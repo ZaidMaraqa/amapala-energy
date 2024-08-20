@@ -1,8 +1,9 @@
 'use client'
 
-import { SimpleGrid, Flex, Spinner, Divider, Box } from "@chakra-ui/react";
-import getTopBlogs from "@/hooks/getTopBlogs";
+import { Box, Divider, Flex, SimpleGrid, Spinner } from "@chakra-ui/react";
 import TopBlogCard, { BlogCardProps } from "./TopBlogCard";
+
+import getTopBlogs from "@/hooks/getTopBlogs";
 
 const BlogList = () => {
   const { data, error, isLoading } = getTopBlogs();

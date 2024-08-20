@@ -1,8 +1,11 @@
+import "@fontsource/lexend";
+
 import { Box, Card, CardBody, CardFooter, Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react"
+
+import CardHeader from "../../cardHeader";
 import { FaChevronRight } from "react-icons/fa";
 import { ServiceCardProps } from "./serviceCard.interface";
-import "@fontsource/lexend";
-import CardHeader from "../../cardHeader";
+import config from "@/config";
 
 const ServiceCard = ({
     imageUrl,
@@ -24,11 +27,11 @@ const ServiceCard = ({
         >
             <CardBody display={'flex'} flexDirection={'column'} gap={'1.5rem'}>
                 <Image
-                    src={imageUrl}
+                    src={readTime ? `${config.apiUrl}${imageUrl}` : imageUrl}
                     alt='service image'
                     h={'18.75rem'}
                     w={'100%'}
-                    objectFit={'cover'}
+                    objectFit={'contain'}
                 />
                 <Flex direction={'column'} gap={'1.5rem'} mt={'1rem'}>
                     {blog && category && readTime && (

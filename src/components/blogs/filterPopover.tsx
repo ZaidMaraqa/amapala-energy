@@ -39,7 +39,7 @@ interface FilterPopoverProps {
       <Popover>
         <PopoverTrigger>
           <Flex bg={'primeBlue'} justifyContent={'center'} alignItems={'center'} cursor="pointer">
-            <Image src={ASSETS.icons.filters} alt="filters icon" w={'3rem'} h={'1.7rem'} />
+            <Image src={ASSETS.icons.filters} alt="filters icon" w={'3rem'} h={'1rem'} />
           </Flex>
         </PopoverTrigger>
         <PopoverContent bg={'white'}>

@@ -3,6 +3,7 @@ import config from '@/config';
 
 export async function GET() {
     try{
+
         const response = await fetch(`${config.apiUrl}/popular-blogs`, {
             method: 'GET',
             headers: {
@@ -13,6 +14,7 @@ export async function GET() {
         if (!response.ok) {
             throw new Error('Failed to subscribe');
         }
+
 
         return response
     } catch (err) {
