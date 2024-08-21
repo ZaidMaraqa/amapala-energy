@@ -8,6 +8,7 @@ export const ASSETS = {
     oil: '/assets/oil.jpg',
     countryProfiles: '/assets/countryProfiles.jpg',
     latinAmerica: '/assets/latinAmerica.png',
+    cathederal: '/assets/cathederal.png',
     icons: {
         pageNotFound: '/assets/pageNotFound.svg',
         filters: '/assets/filters.svg',

@@ -14,7 +14,7 @@ const NavBar = ({ bg = '#C8D0D6' }) => {
             <Flex direction={'row'} alignItems={'center'} gap={'1.5rem'} color={'#202122'} fontSize={'1.25rem'} fontWeight={500}>
                 <Link href={PAGES.BLOGS}><Text _hover={{ color: 'primeBlue', textDecoration: 'underline'}}>Articles</Text></Link>
                 <Link href={PAGES.BLOGS}><Text _hover={{ color: 'primeBlue', textDecoration: 'underline'}}>Country Profiles</Text></Link>
-                <Link href={PAGES.HOME} ><Text _hover={{ color: 'primeBlue', textDecoration: 'underline'}}>About Us</Text></Link>
+                <Link href={PAGES.ABOUT_US} ><Text _hover={{ color: 'primeBlue', textDecoration: 'underline'}}>About Us</Text></Link>
             </Flex>
             <ContactUsButton />
 

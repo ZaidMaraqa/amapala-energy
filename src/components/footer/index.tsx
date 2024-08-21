@@ -1,15 +1,16 @@
-import { ASSETS } from '@/assets';
-import { Stack, Text, Flex, Image, } from '@chakra-ui/react';
 import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import SocialIcon from './socialButton';
+import { Flex, Image, Stack, Text, } from '@chakra-ui/react';
 import { navLinks1, navLinks2 } from '../../../public/constants';
+
+import { ASSETS } from '@/assets';
 import NavLink from './navLink';
+import SocialIcon from './socialButton';
 
 const Footer = () => {
 
     const socialIcons = [
         { href: 'https://www.instagram.com', icon: <FaInstagram fontSize="1.5rem" />, label: 'instagram' },
-        { href: 'https://www.linkedin.com/company/amapala-energy-insights/about/', icon: <FaLinkedinIn fontSize="1.5rem" />, label: 'linkedin' },
+        { href: 'https://www.linkedin.com/company/faulmata-energy-advisors/about/', icon: <FaLinkedinIn fontSize="1.5rem" />, label: 'linkedin' },
         { href: 'https://www.youtube.com', icon: <FaYoutube fontSize="1.5rem" />, label: 'youtube' }
     ];
 
@@ -39,7 +40,7 @@ const Footer = () => {
                     ))}
                 </Flex>
             </Flex>
-            <Text color={'black'} fontWeight={600} fontSize={'1.25rem'} textAlign={'center'}>© 2024 AMAPALA Energy Insights Limited. All rights reserved.</Text>
+            <Text color={'black'} fontWeight={600} fontSize={'1.25rem'} textAlign={'center'}>© 2024 FAULMATA Energy Insights Limited. All rights reserved.</Text>
         </Flex>
     );
 }

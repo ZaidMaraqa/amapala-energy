@@ -5,6 +5,7 @@ const config = {
 export const PAGES = {
     HOME: '/',
     CONTACT_US: '/contact-us',
+    ABOUT_US: '/about-us',
     BLOGS: '/blogs',
     BLOG: '/blog',
   };
