@@ -21,6 +21,7 @@ import BlogList from "@/components/blogs/blogsList";
 import BlogNewsLetter from "@/components/blogs/blogNewsLetter";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
+import NewsLetter from "@/components/home/newsLetter";
 import React from "react";
 import { formatDate } from "@/utils";
 import getBlog from "@/hooks/getBlog";
@@ -38,7 +39,7 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
   return (
     <Flex direction={'column'} h={'100vh'}>
       <NavBar />
-      <Flex flex={1} direction={'column'} gap={'2rem'}>
+      <Flex flex={1} direction={'column'}>
         {/* Go Back Button */}
         <Flex direction={'column'} align={'start'} p={'2rem'} gap={'1rem'}>
         <Flex alignItems={"center"} _hover={{ opacity:.7 }}>
@@ -54,16 +55,16 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
             Back
           </Text>
         </Flex>
-          <Flex direction={'row'}>
+          <Flex direction={'row'} gap={'1rem'}>
             <Image src={`${config.apiUrl}${data.image}`} w={'350px'} alt="blog related pic" borderRadius={'.5rem'} />
             <Flex direction={'column'} gap={'1rem'} px={'1rem'} justifyContent={'space-between'}>
               <Flex direction={'row'} alignItems={'center'} gap={'.5rem'} mt={'1rem'}>
                 <Badge bg={'#00842A'} p={'.5rem'} borderRadius={'.25rem'}>
                   <Text fontWeight={600} fontSize={'1rem'} color={'white'}>{data.category}</Text>
                 </Badge>
-                {/* <Badge bg={'primeBlue'} p={'.5rem'} borderRadius={'.25rem'}>
-                  <Text fontWeight={600} fontSize={'1rem'} color={'white'}>{data.country}</Text>
-                </Badge> */}
+                <Badge bg={'primeBlue'} p={'.5rem'} borderRadius={'.25rem'}>
+                  <Text fontWeight={600} fontSize={'1rem'} color={'white'}>{'PANAMA'}</Text>
+                </Badge>
                 <Text fontSize={'20px'} fontWeight={600}>{data.readingTime} min read</Text>
               </Flex>
               <Heading fontWeight={600} fontSize={'4.375rem'} >{data.title}</Heading>
@@ -72,12 +73,9 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
           </Flex>
         </Flex>
 
-        <Text fontFamily="'Lexend', sans-serif" fontWeight={500} fontSize={'1.25rem'} color={'#696D70'} px={'2rem'}>{data.content}</Text>
+        <Text mb={'2rem'} fontFamily="'Lexend', sans-serif" fontWeight={500} fontSize={'1.25rem'} color={'#696D70'} px={'2rem'}>{data.content}</Text>
         <BlogList isSpecficBlog={true} />
-        <Box p={'2rem'}>
-          <Divider colorScheme={'blue'} orientation="horizontal" size={'lg'} />
-          <BlogNewsLetter />
-        </Box>
+        <NewsLetter />
       </Flex>
       <Footer />
     </Flex>
