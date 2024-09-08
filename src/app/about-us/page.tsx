@@ -15,15 +15,15 @@ const AboutUs = () => {
             <Flex flex={1} p="2rem" direction="column" gap="1.5rem">
                 <AboutBreadCrumb />
                 <Text fontWeight={600} fontSize="4.5rem">A Little About Us</Text>
-
                 {aboutUsSections.map((section, index) => (
                     <Box key={index} mb={8}>
                         <MissionStatement title={section.title} content={section.content} image={section.image} />
                     </Box>
                 ))}
-
             </Flex>
-            <ConsultingSection />
+            <div id="consultingSection">
+                <ConsultingSection />
+            </div>
             <NewsLetter />
             <Footer />
         </Flex>

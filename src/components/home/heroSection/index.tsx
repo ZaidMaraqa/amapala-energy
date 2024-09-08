@@ -34,9 +34,9 @@ const HeroSection = () => {
                         Energy
                     </Text>
                 </Text>
-                <Text fontFamily="'Lexend', sans-serif" color={'#202122'} fontWeight={500} fontSize={'1rem'} whiteSpace={'pre-line'}>
-                    Welcome to AMAPALA,  the very first dedicated Latin America, one-stop-shop <br />
-                    energy and natural resource boutique news consultancy.
+                <Text fontFamily="'Lexend', sans-serif" color={'#202122'} fontWeight={500} fontSize={'1rem'} whiteSpace={'pre-line'} maxW={'80%'}>
+                Welcome to FAULMATA Energy Insights. Inspired by the history of the town of Amapala, on the Honduran Island La Isla del Tigre, we are the very first dedicated Latin America one-stop-shop energy and natural resource boutique news consultancy.
+
                 </Text>
                 <Link href={PAGES.ABOUT_US}>
                 <Button bg={'primeBlue'} borderRadius={0} px={'2rem'} py={'1.5rem'} display={'flex'} alignItems={'center'} gap={'1rem'}>

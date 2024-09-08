@@ -31,7 +31,7 @@ const ServiceCard = ({
                     alt='service image'
                     h={'18.75rem'}
                     w={'100%'}
-                    objectFit={'contain'}
+                    objectFit={'cover'}
                 />
                 <Flex direction={'column'} gap={'1.5rem'} mt={'1rem'}>
                     {blog && category && readTime && (

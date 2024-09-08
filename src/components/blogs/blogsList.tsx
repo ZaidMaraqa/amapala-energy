@@ -36,7 +36,9 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
   if (error) return <div>Failed to load data</div>;
 
   const totalPosts = data?.total_posts || 0;
-  const totalPages = Math.floor(totalPosts / 8);
+  const totalPages = Math.ceil(totalPosts / 8);
+  console.log(totalPosts)
+  console.log(totalPages)
 
   return (
     <Flex direction={'column'} gap={'1.5rem'} bg="primeGray" py={'5rem'} px={['.5rem', '3rem', '3rem', '3rem']}>

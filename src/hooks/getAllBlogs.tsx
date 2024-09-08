@@ -17,7 +17,9 @@ export default function getBlogs(pageIndex: number, search: string = '', categor
   }
 
   const queryString = queryParams.toString();
-  const { data, error, isLoading } = useSWR(`/api/getBlogs?${queryString}`, fetcher);
+  const { data, error, isLoading } = useSWR(`/api/getBlogs?${queryString}`, fetcher, {
+    keepPreviousData: true,
+  });
 
   return {
     data,
