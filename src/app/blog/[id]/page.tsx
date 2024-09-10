@@ -74,8 +74,10 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
         </Flex>
 
         <Text mb={'2rem'} fontFamily="'Lexend', sans-serif" fontWeight={500} fontSize={'1.25rem'} color={'#696D70'} px={'2rem'}>{data.content}</Text>
+        <Box py={'3rem'} borderTop={'1px solid #8A9BA8'}>
+        <BlogNewsLetter />
+        </Box>
         <BlogList isSpecficBlog={true} />
-        <NewsLetter />
       </Flex>
       <Footer />
     </Flex>

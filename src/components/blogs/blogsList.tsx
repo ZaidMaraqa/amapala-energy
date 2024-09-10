@@ -21,7 +21,10 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
 
   const [debouncedSearch] = useDebounce(search, 600);
 
-  const { data, error, isLoading } = getBlogs(currentPage, debouncedSearch, category, country);
+  const pageSize = isSpecficBlog ? 3 : 9;
+
+
+  const { data, error, isLoading } = getBlogs(currentPage, debouncedSearch, category, country, pageSize);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -32,13 +35,11 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
     setCurrentPage(1);
   };
 
-  if (isLoading) return <Flex h={'10rem'} justifyContent={'center'} alignItems={'center'}><Spinner thickness='0.25rem' speed='0.55s' emptyColor='gray.200' color='primeBlue' size='xl' /></Flex>;
-  if (error) return <div>Failed to load data</div>;
 
   const totalPosts = data?.total_posts || 0;
-  const totalPages = Math.ceil(totalPosts / 8);
-  console.log(totalPosts)
-  console.log(totalPages)
+  const totalPages = Math.ceil(totalPosts / pageSize);
+
+  if (error) return <div>Failed to load data {error}</div>;
 
   return (
     <Flex direction={'column'} gap={'1.5rem'} bg="primeGray" py={'5rem'} px={['.5rem', '3rem', '3rem', '3rem']}>
@@ -86,7 +87,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
             readTime={blog.readTime}
             title={blog.title}
             description={blog.description}
-            link={'/'}
+            link={`/blog/${blog._id}`}
             blog={true}
           />
         ))}

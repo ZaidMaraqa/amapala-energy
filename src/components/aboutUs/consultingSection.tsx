@@ -3,31 +3,34 @@
 import "@fontsource/lexend";
 
 import { Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
-import { MdInsertChart, MdOutlineBusinessCenter, MdOutlineEco, MdOutlineEngineering } from "react-icons/md";
+import { MdInsertChart, MdOutlineBusinessCenter } from "react-icons/md";
 
 import ConsultingCard from "./consultingCard";
+import { PiShareNetwork } from "react-icons/pi";
+import { IoAnalyticsOutline } from "react-icons/io5";
 
 const ConsultingSection = () => {
+
   const consultingServices = [
     {
       icon: MdInsertChart,
-      title: "Market Analysis",
-      description: "In-depth analysis of energy markets in Latin America to guide your investment decisions."
+      title: "Specialized Reports",
+      description: "Request country and/ or sector specific reports tailored to the needs of your business or person."
     },
     {
       icon: MdOutlineBusinessCenter,
-      title: "Strategic Planning",
-      description: "Tailored strategies to ensure long-term success in the evolving energy landscape."
+      title: "Project management",
+      description: "Trust us to help you lead your project from start to finish, using our expertise and network to roll out and perfect your strategy, and ultimately achieve your business objectives."
     },
     {
-      icon: MdOutlineEco,
-      title: "Sustainability Consulting",
-      description: "Helping businesses adopt sustainable practices and meet environmental goals."
+      icon: IoAnalyticsOutline,
+      title: "Investment Analysis",
+      description: "Get in touch to solicit bespoke insights into relevant investment climates, opportunities and risks in Latin America's energy and natural resource sector."
     },
     {
-      icon: MdOutlineEngineering,
-      title: "Technical Advisory",
-      description: "Expert advice on energy projects, from engineering to implementation."
+      icon: PiShareNetwork,
+      title: "Networking",
+      description: "Allow us to use our platform to connect you to the relevant market players and actors across Latin America and around the world that will help you achieve your business and project goals in the region."
     }
   ];
 
@@ -35,14 +38,14 @@ const ConsultingSection = () => {
     <Flex direction="column" py="6rem" px="3rem" gap="5rem" bg="primeGray">
       <Flex direction="column" gap="1rem">
         <Heading fontWeight={600} fontSize="4.5rem">
-          Our Main Offerings
+          Our Services
         </Heading>
-        <Text fontWeight={500} fontSize="1.5rem" fontFamily="'Lexend', sans-serif" color="#202122">
-          Here at AMAPALA Energy Insights we want to be your long-term strategic partner, to help you sustainably and equitably contribute to the Latin American energy transition.
-        </Text>
-        <Text fontWeight={500} fontSize="1.5rem" fontFamily="'Lexend', sans-serif" color="#202122">
-          We Offer a multitude of consulting services such as:
-        </Text>
+        <Flex direction={'column'} gap={'1rem'}>
+          <Text fontWeight={500} fontSize="1.25rem" fontFamily="'Lexend', sans-serif" color="#202122">
+            Here at FAULMATA Energy Insights we aspire to be your long-term strategic partner, to help you sustainably and equitably contribute to Latin America's role in the global energy transition. Whatever your idea, goal or project, FAULMATA will help you make it happen.        </Text>
+          <Text fontWeight={500} fontSize="1.25rem" fontFamily="'Lexend', sans-serif" color="#202122">
+            Therefore, alongside our open-to-all and free-to-view media market insights, read on below to learn about the specialized consulting services we offer…         </Text>
+        </Flex>
       </Flex>
 
       <Grid templateColumns="repeat(auto-fit, minmax(500px, 1fr))" gap={10}>
