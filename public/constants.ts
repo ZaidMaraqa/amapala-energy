@@ -35,19 +35,22 @@ export const servicesData = [
       id: 'left',
       imagUrl: ASSETS.icons.microphone,
       title: 'Energy Leader Interviews',
-      description: 'AMAPALA brings you exclusive discussions with industry leaders and experts, exploring what awaits the Latin American energy and natural resource sector.'
+      description: 'AMAPALA brings you exclusive discussions with industry leaders and experts, exploring what awaits the Latin American energy and natural resource sector.',
+      link: PAGES.BLOGS
     },
     {
       id: 'middle',
       imagUrl: ASSETS.icons.faulmata,
       title: 'Faulmata Consulting',
-      description: 'Whatever the country, whatever the sector, contact us to request and benefit from our tailored expertise and services. This is your gateway to a long and prosperous relationship with FAULMATA. Take a look at our services here…'
+      description: 'Whatever the country, whatever the sector, contact us to request and benefit from our tailored expertise and services. This is your gateway to a long and prosperous relationship with FAULMATA. Take a look at our services here…',
+      link: PAGES.ABOUT_US_CONSULTING
     },
     {
       id: 'right',
       imagUrl: ASSETS.icons.location,
       title: 'Country Profiles',
-      description: 'FAULMATA is the first news consultancy platform of its kind, offering both a holistic and country-by-country understanding of the entire Latin American energy and natural resource sector. Engage with our latest country-specific insights here…'
+      description: 'FAULMATA is the first news consultancy platform of its kind, offering both a holistic and country-by-country understanding of the entire Latin American energy and natural resource sector. Engage with our latest country-specific insights here…',
+      link: PAGES.BLOGS
     }
   ];
 

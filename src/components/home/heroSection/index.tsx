@@ -16,12 +16,12 @@ const HeroSection = () => {
             height={'90vh'}
             w={'100vw'}
         >
-            <Flex direction={'column'} justifyContent={'center'} gap={'3rem'} alignItems={['center', 'center','center', 'start', 'start']} p={'1rem'} w={['100vw', '100vw', '100vw', '60vw']}  px={'1rem'}>
+            <Flex direction={'column'} justifyContent={'center'} gap={'3rem'} alignItems={['center', 'center','start', 'start', 'start']} p={'1rem'} w={['100vw', '100vw', '100vw', '60vw']}  px={'1rem'}>
                 <Text
                     color={'primeBlue'}
                     fontWeight={600}
-                    fontSize={['3rem', '5rem', '5rem', '6.5rem']}
-                    lineHeight={['3rem', '5rem', '5rem', '6.5rem']}
+                    fontSize={['3rem', '5rem', '6rem', '6.5rem']}
+                    lineHeight={['3rem', '5rem', '6rem', '6.5rem']}
                     whiteSpace={'pre-line'}
                 >
                     <Text as={'span'} >
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 </Button>
                 </Link>
             </Flex>
-            <Image src={ASSETS.turbines} w={'40vw'} objectFit={'cover'} display={['none', 'none', 'none', 'flex']} alt="solar panels"/>
+            <Image src={ASSETS.turbines} w={'40vw'} objectFit={'cover'} display={['none', 'none', 'flex', 'flex']} alt="solar panels"/>
         </Flex>
     )
 }

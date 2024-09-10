@@ -86,6 +86,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
             readTime={blog.readTime}
             title={blog.title}
             description={blog.description}
+            link={'/'}
             blog={true}
           />
         ))}

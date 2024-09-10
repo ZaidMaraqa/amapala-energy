@@ -9,7 +9,6 @@ import getTopBlogs from "@/hooks/getTopBlogs";
 const NewsGrid = () => {
     const { data, error, isLoading } = getTopBlogs();
 
-    console.log(data)
 
     if (isLoading) return <Flex h={'10rem'} justifyContent={'center'} alignItems={'center'}><Spinner thickness='0.25rem' speed='0.55s' emptyColor='gray.200' color='primeBlue' size='xl' /></Flex>;
     if (error) return <div>Failed to load data</div>;
@@ -26,6 +25,7 @@ const NewsGrid = () => {
                     description={blog.description}
                     _id={blog._id}
                     news={true}
+                    link={`/blog/${blog._id}`}
                 />
             ))}
         </SimpleGrid>

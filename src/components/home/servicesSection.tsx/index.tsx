@@ -20,6 +20,7 @@ const ServicesSection = () => {
                         imageUrl={service.imagUrl}
                         title={service.title}
                         description={service.description}
+                        link={service.link}
                     />
                 ))}
             </SimpleGrid>
