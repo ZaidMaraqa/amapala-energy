@@ -5,8 +5,8 @@ import { CSPostHogProvider, Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Amapala Energy Insights",
-  description: "Amapala Energy Insights",
+  title: "Faulmata Energy Insights",
+  description: "Faulmata Energy Insights",
 };
 
 export default function RootLayout({

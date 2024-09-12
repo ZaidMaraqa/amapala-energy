@@ -33,7 +33,7 @@ const MissionStatement = ({ title, content, image }: MissionStatementProps) => {
                 </ReactMarkdown>
             ))}
             {image && (
-                <Image src={image} height={500} width={1400} alt="amapala" />
+                <Image src={image} height={500} width={1400} alt="faulmata" />
             )}
         </Flex>
     );

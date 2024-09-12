@@ -7,4 +7,5 @@ export interface ServiceCardProps {
     readTime?: number;
     news?: boolean;
     blog?: boolean;
+    link: string;
 }

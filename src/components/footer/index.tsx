@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <Flex direction={'column'} gap={'4rem'} py={'3rem'} px={'1rem'}>
             <Flex direction={['column', 'column', 'row', 'row']} alignItems={['center', 'center','start','start']} gap={'2rem'}>
-                    <Image src={ASSETS.amapalaFull} alt='amapala logo' w={'8rem'} h={'5rem'} display={['none', 'nonr','flex','flex',]} />
+                    <Image src={ASSETS.icons.faulmata} alt='amapala logo' w={'8rem'} h={'5rem'} display={['none', 'nonr','flex','flex',]} />
                 <Flex gap={'2rem'} justifyContent={'center'} w={'100vw'}>
                     <Stack gap={'1rem'}>
                         {navLinks1.map((link) => (
