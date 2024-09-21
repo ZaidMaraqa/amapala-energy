@@ -35,7 +35,7 @@ const ConsultingSection = () => {
   ];
 
   return (
-    <Flex direction="column" py="6rem" px="3rem" gap="5rem" bg="primeGray">
+    <Flex direction="column" py="4rem" px="1.5rem" gap="5rem" bg="primeGray">
       <Flex direction="column" gap="1rem">
         <Heading fontWeight={600} fontSize="4.5rem">
           Our Services

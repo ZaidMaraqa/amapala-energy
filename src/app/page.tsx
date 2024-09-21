@@ -10,7 +10,7 @@ import ServicesSection from "@/components/home/servicesSection.tsx";
 const Home = () => {
   return (
     <Flex direction={'column'} w={'100vw'} overflow={'auto'}>
-      <NavBar />
+      <NavBar noBorderRadius={true} />
       <div id="heroSection">
         <HeroSection />
       </div>

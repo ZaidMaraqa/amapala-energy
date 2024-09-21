@@ -17,7 +17,7 @@ const BlogList = dynamic(() => import('@/components/blogs/blogsList'), { ssr: fa
 const Blogs = () => {
   return (
     <>
-      <NavBar bg="#F2F2F2" />
+      <NavBar  />
       <Flex bg="#F2F2F2" direction={'column'} mb={'3rem'} p={['0rem', '.5rem', '1.5rem', '3rem']} gap={'2rem'}>
         <Heading fontSize={['2rem', '2.75rem', '3.625rem', '4.625rem']} fontWeight={600}>Trending Topics</Heading>
         <Flex p={'1rem'} direction={'column'} gap={'3rem'}>

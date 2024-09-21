@@ -21,14 +21,14 @@ const ConsultingCard = ({ icon, title, description}: ConsultingCardProps) => {
       minH={'11rem'}
     >
       <Flex
-        w={12}
-        h={12}
+        w={16}
+        h={16}
         align="center"
         justify="center"
         bg={'primeBlue'}
         borderRadius="full"
       >
-        <Icon as={icon} boxSize={6} color="white" />
+        <Icon as={icon} boxSize={10} color="white" />
       </Flex>
       <Heading fontSize="1.5rem" fontWeight={700}>
         {title}

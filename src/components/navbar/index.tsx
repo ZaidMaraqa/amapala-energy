@@ -5,9 +5,9 @@ import ContactUsButton from "./contactButton";
 import Link from "next/link";
 import { PAGES } from "@/config";
 
-const NavBar = ({ bg = '#C8D0D6' }) => {
+const NavBar = ({ noBorderRadius = false }) => {
     return (
-        <Flex as={'nav'} justifyContent={'space-between'} bg={bg} alignItems={'center'} px={'1rem'} py={'1.5rem'} pl={0}>
+        <Flex as={'nav'} justifyContent={'space-between'} bg={'primeGray'} alignItems={'center'} px={'1rem'} py={'.2rem'} pl={0} borderRadius={noBorderRadius ? 0 : 'xl'} mt={noBorderRadius ? '0rem': '1rem'} mx={noBorderRadius ? '0': '1rem'}>
             <Link href={PAGES.HOME}>
                 <Image src={ASSETS.amapala} h={'4rem'} alt="faulmata logo" />
             </Link>
