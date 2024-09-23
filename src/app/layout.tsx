@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { CSPostHogProvider, Providers } from "./providers";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Providers } from "./providers";
+import PHProvider from "@/lib/posthog";
 
 export const metadata: Metadata = {
   title: "Faulmata Energy Insights",
@@ -16,13 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <CSPostHogProvider>
+      <PHProvider>
         <body>
           <Providers>
             {children}
           </Providers>
         </body>
-      </CSPostHogProvider>
+        </PHProvider>
     </html>
   );
 }
