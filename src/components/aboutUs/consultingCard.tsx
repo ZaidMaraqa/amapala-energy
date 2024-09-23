@@ -33,7 +33,11 @@ const ConsultingCard = ({ icon, title, description}: ConsultingCardProps) => {
       <Heading fontSize="1.75rem" fontWeight={700}>
         {title}
       </Heading>
-      <Text fontSize="1.25rem" color="#696D70" fontFamily="'Lexend', sans-serif">
+      <Text
+        fontSize={[".75rem", "1.25rem", "1.25rem", "1.25rem"]}
+        color="#696D70"
+        fontFamily="'Lexend', sans-serif"
+      >        
         {description}
       </Text>
     </Flex>

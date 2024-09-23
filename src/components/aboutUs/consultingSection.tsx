@@ -49,10 +49,11 @@ const ConsultingSection = () => {
         </Flex>
       </Flex>
 
-      <Grid templateColumns="repeat(auto-fit, minmax(500px, 1fr))" gap={50} px={10}>
+      <Grid templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(2, 1fr)']} gap={[10, 50, 50, 50]} px={[1, 1, 10, 10]}>
         {consultingServices.map((service, index) => (
           <GridItem key={index}>
             <ConsultingCard
+              key={index}
               icon={service.icon}
               title={service.title}
               description={service.description}

@@ -16,7 +16,7 @@ const AboutUs = () => {
             <Flex flex={1} mt={'3rem'}  direction="column" gap="2.5rem">
                 <Flex px={'1.5rem'} direction={'column'} gap={'1.5rem'}>
                 <AboutBreadCrumb />
-                <Text fontWeight={600} fontSize="4.5rem">A Little About Us</Text>
+                <Text fontWeight={600} fontSize="4.5rem" lineHeight={['4.5rem']}>A Little About Us</Text>
                 </Flex>
                 {aboutUsSections.map((section, index) => (
                         <>

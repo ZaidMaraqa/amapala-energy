@@ -2,7 +2,8 @@
 
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { Button, Flex, FormControl, FormErrorMessage, FormLabel, Input, Text, Textarea } from "@chakra-ui/react";
+import { Button, Flex, FormControl, FormErrorMessage, FormLabel, Input, Text, Textarea, useToast } from "@chakra-ui/react";
+import { useState } from "react";
 
 interface FormValues {
     name: string;
@@ -12,7 +13,25 @@ interface FormValues {
     request: string;
 }
 
+const sendContactRequest = async (values: FormValues) => {
+    const res = await fetch('/api/contactUs', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+    });
+
+    if (!res.ok) {
+        throw new Error('Failed to send contact email');
+    }
+
+    return res.json();
+};
+
 const ContactUsForm = () => {
+    const toast = useToast()
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const initialValues: FormValues = {
         name: "",
         job_title: "",
@@ -29,10 +48,34 @@ const ContactUsForm = () => {
         request: Yup.string().required("Request is required"),
     });
 
-    const onSubmit = (values: FormValues, { resetForm }: { resetForm: () => void }) => {
-        console.log("Form data", values);
-        resetForm();
+    const onSubmit = async (values: FormValues, { resetForm }: { resetForm: () => void }) => {
+        setIsLoading(true);
+        try {
+            await sendContactRequest(values);
+
+            toast({
+                title: "Success",
+                description: "Your request has been submitted successfully.",
+                status: "success",
+                duration: 5000,
+                isClosable: true,
+            });
+
+            resetForm();
+        } catch (err) {
+            toast({
+                title: "Error",
+                description: "Something went wrong. Please try again later.",
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+        } finally {
+            setIsLoading(false);
+        }
     };
+
+
 
     return (
         <Formik
@@ -72,7 +115,8 @@ const ContactUsForm = () => {
                             <FormErrorMessage>{errors.request}</FormErrorMessage>
                         </FormControl>
                         <Flex>
-                        <Button type="submit" bg={'primeBlue'} color={'white'} px={'1.5rem'} py={'1rem'}>Submit</Button>
+
+                        <Button type="submit" bg={'primeBlue'} color={'white'} px={'1.5rem'} py={'1rem'} isLoading={isLoading}>Submit</Button>
                         </Flex>
                     </Flex>
                 </Form>

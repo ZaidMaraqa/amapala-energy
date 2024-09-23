@@ -54,7 +54,7 @@ export const servicesData = [
     {
       id: 'right',
       imagUrl: ASSETS.icons.location,
-      title: 'Country Profiles',
+      title: 'Country Specfic Expertise',
       description: 'FAULMATA is the first news consultancy platform of its kind, offering both a holistic and country-by-country understanding of the entire Latin American energy and natural resource sector. Engage with our latest country-specific insights here…',
       link: PAGES.BLOGS
     }

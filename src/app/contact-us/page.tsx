@@ -11,7 +11,7 @@ import Footer from "@/components/footer";
 const ContactUsPage = () => {
     return (
         <Flex direction={'column'} h={'100vh'} w={'100vw'} bg={'primeGray'} overflow={'auto'}>
-            <NavBar />
+            <NavBar noBorderRadius={true} />
             <Flex flex={1} gap={'1rem'} direction={'column'} p={['.5rem', '1rem', '3rem', '3rem']}>
                 <ContactBreadCrumb />
                 <Text

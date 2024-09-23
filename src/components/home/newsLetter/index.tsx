@@ -1,3 +1,4 @@
+import LinkedInSection from "@/components/linkedinSection";
 import { Flex, Text } from "@chakra-ui/react";
 import NewsletterForm from './newsLetterForm';
 import "@fontsource/lexend";
@@ -13,6 +14,7 @@ const NewsLetter = () => {
                 FAULMATA little own crystal ball. Most important news, future sector trends, developments and opportunities direct to your inbox once a month.
                 </Text>
                 <NewsletterForm />
+                <LinkedInSection />
             </Flex>
         </Flex>
     );

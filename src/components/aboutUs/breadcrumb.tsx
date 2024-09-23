@@ -13,7 +13,7 @@ const AboutBreadCrumb = () => {
             separator={<FaChevronRight color='gray.500' />}
             color={'#202122'}
             fontWeight={700}
-            fontSize={'1.1875rem'} >
+            >
             <BreadcrumbItem>
                 <BreadcrumbLink href={PAGES.HOME}>Home</BreadcrumbLink>
             </BreadcrumbItem>
