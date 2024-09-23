@@ -30,10 +30,10 @@ const ConsultingCard = ({ icon, title, description}: ConsultingCardProps) => {
       >
         <Icon as={icon} boxSize={10} color="white" />
       </Flex>
-      <Heading fontSize="1.5rem" fontWeight={700}>
+      <Heading fontSize="1.75rem" fontWeight={700}>
         {title}
       </Heading>
-      <Text fontSize="1rem" color="#696D70" fontFamily="'Lexend', sans-serif">
+      <Text fontSize="1.25rem" color="#696D70" fontFamily="'Lexend', sans-serif">
         {description}
       </Text>
     </Flex>

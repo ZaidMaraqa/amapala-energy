@@ -55,9 +55,7 @@ const MissionStatement = ({ title, content, image, right }: MissionStatementProp
                             strong: ({ node, ...props }) => {
                                 const childrenArray = React.Children.toArray(props.children);
                                 const textContent = typeof childrenArray[0] === 'string' ? childrenArray[0] : '';
-
                                 const isOurMission = textContent === "Our mission";
-
 
                                 return (
                                     <Text

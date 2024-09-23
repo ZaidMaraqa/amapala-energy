@@ -5,8 +5,8 @@ import ConsultingSection from "@/components/aboutUs/consultingSection";
 import Footer from "@/components/footer";
 import MissionStatement from "@/components/aboutUs/missionStatement";
 import NavBar from "@/components/navbar";
-import NewsLetter from "@/components/home/newsLetter";
 import { aboutUsSections } from "../../../public/constants";
+import ContactUsNewsLetter from "@/components/aboutUs/contactUsSection";
 
 const AboutUs = () => {
     return (
@@ -36,7 +36,7 @@ const AboutUs = () => {
                         </>
                     ))}
             </Flex>
-            <NewsLetter />
+            <ContactUsNewsLetter />
             <Footer />
         </Flex>
         </Container>
