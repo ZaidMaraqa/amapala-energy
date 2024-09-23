@@ -21,15 +21,14 @@ import BlogList from "@/components/blogs/blogsList";
 import BlogNewsLetter from "@/components/blogs/blogNewsLetter";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
-import NewsLetter from "@/components/home/newsLetter";
 import React from "react";
 import { formatDate } from "@/utils";
-import getBlog from "@/hooks/getBlog";
 import { useRouter } from "next/navigation";
+import useGetBlog from "@/hooks/getBlog";
 
 const BlogOverview = ({ params }: { params: { id: string } }) => {
   const id = params.id
-  const { data, isLoading, error } = getBlog(id)
+  const { data, isLoading, error } = useGetBlog(id)
   const router = useRouter()
 
 

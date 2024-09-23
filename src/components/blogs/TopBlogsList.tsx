@@ -3,10 +3,10 @@
 import { Box, Divider, Flex, SimpleGrid, Spinner } from "@chakra-ui/react";
 import TopBlogCard, { BlogCardProps } from "./TopBlogCard";
 
-import getTopBlogs from "@/hooks/getTopBlogs";
+import useGetTopBlogs from "@/hooks/getTopBlogs";
 
 const BlogList = () => {
-  const { data, error, isLoading } = getTopBlogs();
+  const { data, error, isLoading } = useGetTopBlogs();
 
   if (isLoading) return <Flex h={'10rem'} justifyContent={'center'} alignItems={'center'}><Spinner thickness='0.25rem' speed='0.55s' emptyColor='gray.200' color='primeBlue' size='xl' /></Flex>;
   if (error) return <div>Failed to load data</div>;

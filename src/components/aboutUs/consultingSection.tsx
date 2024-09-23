@@ -42,7 +42,7 @@ const ConsultingSection = () => {
         </Heading>
         <Flex direction={'column'} gap={'1rem'}>
           <Text fontWeight={500} fontSize="1em" fontFamily="'Lexend', sans-serif" color="#202122">
-            Here at FAULMATA Energy Insights we aspire to be your long-term strategic partner, to help you sustainably and equitably contribute to Latin America's role in the global energy transition. Whatever your idea, goal or project, FAULMATA will help you make it happen.        </Text>
+            Here at FAULMATA Energy Insights we aspire to be your long-term strategic partner, to help you sustainably and equitably contribute to Latin America role in the global energy transition. Whatever your idea, goal or project, FAULMATA will help you make it happen.        </Text>
           <Text fontWeight={500} fontSize="1rem" fontFamily="'Lexend', sans-serif" color="#202122">
             Therefore, alongside our open-to-all and free-to-view media market insights, read on below to learn about the specialized consulting services we offer…         
             </Text>

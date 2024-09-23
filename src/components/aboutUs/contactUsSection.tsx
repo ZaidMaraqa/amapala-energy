@@ -10,11 +10,11 @@ const ContactUsNewsLetter = () => {
             <Flex direction={'column'} gap={'3rem'} alignItems={'start'}>
                 <Flex direction={'column'} gap={'.5rem'}>
                     <Heading color={'white'} fontSize={['2.5rem', '4.5rem', '5rem', '6rem']} >Get Involved</Heading>
-                    <Text fontFamily="'Lexend', sans-serif" color={'white'} fontWeight={300}>If you're interested in Latin America, the energy, or natural resource sectors—or all three—feel free to <Text as={'span'} textDecor={'underline'} fontWeight={700} color={'#FFC125'}>Contact Us</Text> to learn more.</Text>
+                    <Text fontFamily="'Lexend', sans-serif" color={'white'} fontWeight={300}>If you are interested in Latin America, the energy, or natural resource sectors—or all three—feel free to <Text as={'span'} textDecor={'underline'} fontWeight={700} color={'#FFC125'}>Contact Us</Text> to learn more.</Text>
                 </Flex>
                 <Flex direction={'column'} gap={'.5rem'}>
                     <Text color={'white'} fontFamily="'Lexend', sans-serif" fontWeight={300}>
-                        Don't miss out on the latest updates, insights and more exclusive content!
+                        Do not miss out on the latest updates, insights and more exclusive content!
                     </Text>
                     <Text color={'white'} fontWeight={700}>
                         Subscribe to Our Newsletter

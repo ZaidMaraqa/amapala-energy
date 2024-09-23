@@ -5,9 +5,9 @@ import { Flex, Input, SimpleGrid, Spinner, Text } from "@chakra-ui/react";
 import FilterPopover from "./filterPopover";
 import Paginator from "../paginator";
 import ServiceCard from "../home/serviceCard";
-import getBlogs from "@/hooks/getAllBlogs";
 import { useDebounce } from "use-debounce";
 import { useState } from "react";
+import useGetBlogs from "@/hooks/getAllBlogs";
 
 interface BlogListProps {
   isSpecficBlog?: boolean;
@@ -24,7 +24,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
   const pageSize = isSpecficBlog ? 3 : 9;
 
 
-  const { data, error, isLoading } = getBlogs(currentPage, debouncedSearch, category, country, pageSize);
+  const { data, error, isLoading } = useGetBlogs(currentPage, debouncedSearch, category, country, pageSize);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
