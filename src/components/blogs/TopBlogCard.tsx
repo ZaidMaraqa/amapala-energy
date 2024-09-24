@@ -29,10 +29,10 @@ const TopBlogCard = ({ image,
                 <CardBody>
                     <Flex direction={'column'} gap={'8px'}>
                         <CardHeader readTime={readTime} category={category} />
-                        <Text fontWeight={600} fontSize={'44px'} color={'black'}>{title}</Text>
-                        <Text fontFamily="'Lexend', sans-serif" color={'#696D70'} fontWeight={400} fontSize={'24px'} >{description}</Text>
+                        <Text fontWeight={600} fontSize={'23px'} color={'black'}>{title}</Text>
+                        <Text fontFamily="'Lexend', sans-serif" color={'#696D70'} fontWeight={400} fontSize={'20px'} >{description}</Text>
                     </Flex>
-                    <CardFooter px={0} pb={0} pt={'80px'}>
+                    <CardFooter px={0} pb={0} pt={'2.5rem'}>
                         <Flex gap={'16px'} alignItems={'center'} justifyContent={'flex-start'}>
                             <Text color={'black'} fontSize={'24px'} fontWeight={600} _groupHover={{ textDecoration: 'underline' }}>Read Full Article</Text>
                             <IconButton
