@@ -3,8 +3,8 @@ import { Providers } from "./providers";
 import PHProvider from "@/lib/posthog";
 
 export const metadata: Metadata = {
-  title: "Faulmata Energy Insights",
-  description: "Faulmata Energy Insights",
+  title: "Faulmata Energy Group",
+  description: "Faulmata Energy Group",
 };
 
 export default function RootLayout({

@@ -31,7 +31,7 @@ const ServiceCard = ({
             >
                 <CardBody display={'flex'} flexDirection={'column'} gap={'1.5rem'}>
                     <Image
-                        src={readTime ? `${config.apiUrl}${imageUrl}` : imageUrl}
+                        src={imageUrl}
                         alt='service image'
                         h={'18.75rem'}
                         w={'100%'}

@@ -25,6 +25,7 @@ import React from "react";
 import { formatDate } from "@/utils";
 import { useRouter } from "next/navigation";
 import useGetBlog from "@/hooks/getBlog";
+import LinkedInSection from "@/components/linkedinSection";
 
 const BlogOverview = ({ params }: { params: { id: string } }) => {
   const id = params.id
@@ -55,7 +56,7 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
           </Text>
         </Flex>
           <Flex direction={'row'} gap={'1rem'}>
-            <Image src={`${config.apiUrl}${data.image}`} w={'350px'} alt="blog related pic" borderRadius={'.5rem'} />
+            <Image src={data.image} w={'350px'} alt="blog related pic" borderRadius={'.5rem'} />
             <Flex direction={'column'} gap={'1rem'} px={'1rem'} justifyContent={'space-between'}>
               <Flex direction={'row'} alignItems={'center'} gap={'.5rem'} mt={'1rem'}>
                 <Badge bg={'#00842A'} p={'.5rem'} borderRadius={'.25rem'}>
@@ -73,9 +74,10 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
         </Flex>
 
         <Text mb={'2rem'} fontFamily="'Lexend', sans-serif" fontWeight={500} fontSize={'1.25rem'} color={'#696D70'} px={'2rem'}>{data.content}</Text>
-        <Box py={'3rem'} borderTop={'1px solid #8A9BA8'}>
+        <Flex direction={'column'} gap={'.5rem'} p={'3rem'} borderTop={'1px solid #8A9BA8'}>
         <BlogNewsLetter />
-        </Box>
+        <LinkedInSection black={true} />
+        </Flex>
         <BlogList isSpecficBlog={true} />
       </Flex>
       <Footer />

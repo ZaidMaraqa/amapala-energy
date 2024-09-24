@@ -46,7 +46,7 @@ const TopBlogCard = ({ image,
                         </Flex>
                     </CardFooter>
                 </CardBody>
-                <Image src={`${config.apiUrl}${image}`} alt="blog image" w={'300px'}  objectFit={'contain'} display={['none', 'none', 'flex', 'flex']} />
+                <Image src={image} alt="blog image" w={'300px'}  objectFit={'contain'} display={['none', 'none', 'flex', 'flex']} />
             </Card>
         </Link>
     )
