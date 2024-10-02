@@ -23,7 +23,9 @@ const Home = () => {
       <div id="insightsSection">
         <NewsSection />
       </div>
-      <NewsLetter />
+      <div id="subscribeSection">
+        <NewsLetter />
+      </div>
       <Footer />
     </Flex>
   );

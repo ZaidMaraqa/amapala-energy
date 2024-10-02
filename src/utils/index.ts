@@ -37,7 +37,7 @@ export const getCategoryColor = (category: string) => {
     case "renewables":
       return "#009b00"; // Green, for Renewables
     case "oil and gas":
-      return "#735F32"; // PrimeBlue for energy-related topics
+      return "#499"; // PrimeBlue for energy-related topics
     default:
       return "#87F1EB"; // Default to primeGray
   }
@@ -46,7 +46,7 @@ export const getCategoryColor = (category: string) => {
 export const getCountryBackgroundColor = (countryCode: string) => {
   switch (countryCode.toUpperCase()) {
     case "AR": // Argentina
-      return "#74ACDF"; // Light blue and white
+      return "blue.200"; // Light blue and white
     case "BR": // Brazil
       return "green.400"; // Green and yellow
     case "CL": // Chile
@@ -61,6 +61,8 @@ export const getCountryBackgroundColor = (countryCode: string) => {
       return "#F4C430"; // Yellow, blue, and red
     case "BO": // Venezuela
       return "#F4C430";
+    case "PA": // Venezuela
+      return "#C96868";
     default:
       return "#C8D0D6"; // Default to primeGray for countries not in the list
   }

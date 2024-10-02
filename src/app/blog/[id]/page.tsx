@@ -53,21 +53,20 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
             Back
           </Text>
         </Flex>
-          <Flex direction={'row'} gap={'1rem'}>
-            <Image src={data.image} w={'350px'} alt="blog related pic" borderRadius={'.5rem'} />
-            <Flex direction={'column'} gap={'1rem'} px={'1rem'} justifyContent={'space-between'}>
+          <Flex direction={['column', 'column', 'row', 'row']} gap={'1rem'}>
+            <Image src={data.image} w={'21.875rem'} alt="blog related pic" borderRadius={'.5rem'} />
+            <Flex direction={'column'} gap={'1rem'} px={['0rem', '.5rem', '1rem', '1rem']} justifyContent={'space-between'}>
               <Flex direction={'row'} alignItems={'center'} gap={'.5rem'} mt={'1rem'}>
-                <Badge bg={getCategoryColor(data.category)} p={'.5rem'} borderRadius={'.25rem'}>
-                  <Text fontWeight={600} fontSize={'1rem'} color={'white'}>{data.category}</Text>
+                <Badge bg={getCategoryColor(data.category)} p={'.5rem'} borderRadius={'.25rem'} height={'100%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                  <Text fontWeight={600} fontSize={['.75rem', '1rem', '1rem', '1rem']} color={'white'}>{data.category}</Text>
                 </Badge>
                 <Flex alignItems={'center'} gap={'.5rem'} bg={getCountryBackgroundColor(data.country_code)} p={'.45rem'} borderRadius={'.25rem'}>
-                    {/* Display the country flag */}
                     <Flag code={data.country_code} style={{ width: "24px", height: "16px" }} alt={`${data.country} flag`} />
-                    <Text fontWeight={600} fontSize={'1rem'} color={'white'}>{data.country}</Text>
+                    <Text fontWeight={600} fontSize={['.75rem', '1rem', '1rem', '1rem']} color={'white'}>{data.country}</Text>
                   </Flex>
-                <Text fontSize={'20px'} fontWeight={600}>{data.readingTime} min read</Text>
+                <Text fontSize={['.75rem', '1.25rem', '1.25rem', '1.25rem']} fontWeight={600}>{data.readingTime} min read</Text>
               </Flex>
-              <Heading fontWeight={600} fontSize={'4.375rem'} >{data.title}</Heading>
+              <Heading fontWeight={600} fontSize={['2.375rem', '4.375rem', '4.375rem', '4.375rem']} >{data.title}</Heading>
               <Text fontWeight={600} fontSize={'1rem'} color={'#696D70'} mb={'1rem'}>{formatDate(data.date)}</Text>
             </Flex>
           </Flex>

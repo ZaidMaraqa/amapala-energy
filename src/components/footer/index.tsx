@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { Flex, Image, Stack, Text, } from '@chakra-ui/react';
 import { navLinks1, navLinks2 } from '../../../public/constants';
 
@@ -6,19 +6,18 @@ import { ASSETS } from '@/assets';
 import NavLink from './navLink';
 import SocialIcon from './socialButton';
 
+const socialIcons = [
+    { href: 'https://www.linkedin.com/company/faulmata-energy-advisors/about/', icon: <FaLinkedinIn fontSize="1.5rem" />, label: 'linkedin' },
+];
+
 const Footer = () => {
-
-    const socialIcons = [
-        { href: 'https://www.instagram.com', icon: <FaInstagram fontSize="1.5rem" />, label: 'instagram' },
-        { href: 'https://www.linkedin.com/company/faulmata-energy-advisors/about/', icon: <FaLinkedinIn fontSize="1.5rem" />, label: 'linkedin' },
-        { href: 'https://www.youtube.com', icon: <FaYoutube fontSize="1.5rem" />, label: 'youtube' }
-    ];
-
     return (
-        <Flex direction={'column'} gap={'4rem'} py={'3rem'} px={'1rem'}>
-            <Flex direction={['column', 'column', 'row', 'row']} alignItems={['center', 'center','start','start']} gap={'2rem'}>
-                    <Image src={ASSETS.icons.faulmata} alt='amapala logo' w={'8rem'} h={'5rem'} display={['none', 'nonr','flex','flex',]} />
-                <Flex gap={'2rem'} justifyContent={'center'} w={'100vw'}>
+        <Flex direction={'column'} gap={'4rem'} py={'3rem'} px={'1rem'} w={'100vw'}>
+            <Flex direction={['column', 'column', 'row', 'row']} alignItems={['center', 'center','start','start']} gap={'2rem'} flex={1}>
+                <Flex flex={1}>
+                    <Image src={ASSETS.amapala} alt='amapala logo' w={'12rem'} h={'5rem'} display={['none', 'nonr','flex','flex',]} />
+                    </Flex>
+                <Flex gap={'2rem'} justifyContent={'center'}  flex={1}>
                     <Stack gap={'1rem'}>
                         {navLinks1.map((link) => (
                             <NavLink key={link.label} href={link.href} label={link.label}>
@@ -34,7 +33,7 @@ const Footer = () => {
                         ))}
                     </Stack>
                 </Flex>
-                <Flex direction="row" gap="1rem">
+                <Flex direction="row" justifyContent={'end'} gap="1rem" flex={1}>
                     {socialIcons.map((social) => (
                         <SocialIcon key={social.href} href={social.href} icon={social.icon} label={social.label} />
                     ))}

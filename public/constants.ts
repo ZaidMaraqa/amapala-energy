@@ -5,33 +5,33 @@ export const aboutUsSections = [
   {
       title: "Our Inspiration",
       content: [
-          "Our inspiration is the town of AMAPALA, on the Honduran Island 'La Isla del Tigre'. In the 19th and 20th centuries, Amapala was a thriving community based on the transportation of the region's natural resources around the globe.",
-          "Since then, due to the violence, corruption, and troubles which have come to be synonymous with Latin America, this influence faded.",
-          "Therefore, AMAPALA represents the belief that Latin America's abundant energy and natural resource capacity can yet again be at the forefront of the region's prosperity and influence around the globe.",
-          "At FAULMATA Energy Insights we are driven by the goal of turning this potential into reality, and spearheading the region's sustainable development, prosperity and influence around the globe.",
+        "Our inspiration is the town of AMAPALA, on the Honduran Island 'La Isla del Tigre'. In the 19th and 20th centuries, Amapala was a thriving community based on the transportation of the region's natural resources around the globe.",
+        "Since then, due to the violence, corruption, and troubles which have come to be synonymous with Latin America, this influence faded.",
+        "Therefore, AMAPALA represents the belief that Latin America's abundant energy and natural resource capacity can yet again be at the forefront of the region's prosperity and influence around the globe.",
+        "At FAULMATA Energy Insights we are driven by the goal of turning this potential into reality, and spearheading the region's sustainable development, prosperity and influence around the globe.",
       ],            
-      image: ASSETS.cathederal, 
+      image: ASSETS.city, 
       right: false
   },
   {
-      title: "Our Mission",
+      title: "Our Mission and Vision",
       content: [
           "From oil and gas, to hydrogen, mining and renewables, FAULMATA Energy Insights aims to be at the forefront of the energy transition in Latin America. **Our mission** is to be the go-to platform and business partner to understand and navigate the future of Latin American energy.",
           "**Our aim** is to help businesses and individuals with current or possible future interests in the region to make self-empowering strategic decisions, in a manner that will ensure the region's population finally reaps the rewards of its energy and natural resource capacity.",
           "In short, the energy transition is Latin America's chance to stand tall and change the script… **FAULMATA** Energy Insights is here to make this happen."
       ],
-      image: ASSETS.placeholder, 
+      image: ASSETS.currency, 
       right: true
   },
   {
       title: "What Sets Us Apart?",
       content: [
-          "Our people's passion for Latin America and its innate potential.",
-          "In every country in the region, the energy transition represents an incredible opportunity. We have noticed that globally, the attention and narratives regarding Latin America's role in this transition are focused on a couple of key emerging markets like Brazil, Chile, Argentina, and Chile, among others. At AMAPALA Energy Insights, we believe that this narrow focus is misplaced, and forgets the vast opportunities rendered by every country in the region.",
-          "Hence, AMAPALA seeks to be your very first dedicated Latin America one-stop-shop energy and natural resource boutique news consultancy, providing both specialized and tailored advice, as well as open media market insight.",
-          "Coupling a unique country-by-country driven specialism, with a holistic understanding of the entirety of the Latin American energy and natural resource sector, we are ONE-STOP-SHOP, because whatever the country, whatever the sector, we do it… and BOUTIQUE, because this is all we do."
+        "In every country in the region, the energy transition represents an incredible opportunity.",
+        "Globally however, the focus on Latin America's role in this transition is centered on just a couple of key emerging markets like Brazil, Chile, Argentina, and Chile, among others.",
+        "Yet, at FAULMATA Energy Group, we believe that this narrow attention is misplaced. Therefore, we are here to plug this gap in the market.",
+        "By coupling a unique country-by-country driven specialism with a holistic regional understanding, we provide top-of-the-line and tailored insights into the entirety of the Latin American energy and natural resource sector, leaving no stone unturned or misunderstood."
       ],
-      image: ASSETS.placeholder, 
+      image: ASSETS.countries, 
       right: true
   }
 ];
@@ -70,6 +70,6 @@ export const servicesData = [
   export const navLinks2 = [
     { href: PAGES.CONTACT_US, label: 'Contact Us' },
     { href: PAGES.BLOGS, label: 'Articles' },
-    { href: '#', label: 'Country Profiles' }
+    { href: `${PAGES.HOME}#subscribeSection`, label: 'Subscribe' }
   ];
 

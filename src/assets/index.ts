@@ -1,13 +1,16 @@
 export const ASSETS = {
     placeholder: '/assets/placeholder.png',
-    amapala: '/assets/amapalaNoBg.png',
+    amapala: '/assets/amapalaNoBg.svg',
     amapalaWithBg: '/assets/amapala.svg',
-    turbines: '/assets/turbines.svg',
+    turbines: '/assets/turbines.png',
     solarPanels: '/assets/solarPanels.svg',
     oil: '/assets/oil.jpg',
     countryProfiles: '/assets/countryProfiles.jpg',
     latinAmerica: '/assets/latinAmerica.png',
     cathederal: '/assets/cathederal.png',
+    currency: '/assets/currency.png',
+    city: '/assets/city.png',
+    countries: '/assets/countries.png',
     icons: {
         pageNotFound: '/assets/pageNotFound.svg',
         filters: '/assets/filters.svg',

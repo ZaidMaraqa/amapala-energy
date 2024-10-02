@@ -35,7 +35,7 @@ const MissionStatement = ({ title, content, image, right }: MissionStatementProp
 
             <Flex gap={'1rem'} direction={['column', 'column', 'row', 'row']} >
             {image && !right && (
-                    <Image src={image} w={['100%', '100%', '50%', '40%']} alt="faulmata" objectFit={'cover'}  />
+                    <Image src={image} w={['100%', '100%', '50%', '40%']} alt="faulmata"  />
                 )}
                 <Flex direction={'column'} w={['100%', '100%', '50%', '60%']} justifyContent={'space-between'}>
                     {content.map((paragraph, index) => (
@@ -74,7 +74,7 @@ const MissionStatement = ({ title, content, image, right }: MissionStatementProp
                     ))}
                 </Flex>
                 {image && right && (
-                    <Image src={image} w={['100%', '100%', '50%', '40%']} alt="faulmata"  />
+                    <Image src={image} objectFit={'cover'} w={['100%', '100%', '50%', '40%']} alt="faulmata"  />
                 )}
             </Flex>
         </Flex>

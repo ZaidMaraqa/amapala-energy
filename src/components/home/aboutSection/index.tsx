@@ -9,9 +9,11 @@ import { PAGES } from "@/config";
 
 const AboutSection = () => {
     return (
-        <Flex direction={['column', 'column', 'column', 'row']} py={'5.5rem'} gap={'5rem'} px={'.5rem'} maxH={'60rem'}>
-            <Image src={ASSETS.latinAmerica}  w={'100%'} objectFit={'cover'} alt="solarPanels" display={['none', 'none','none','flex']}/>
-            <Flex direction={'column'} gap={'1.5rem'} alignItems={'start'} justifyContent={'space-between'}>
+        <Flex direction={['column', 'column', 'column', 'row']} py={['1.5rem', '2.5rem', '3.5rem', '5.5rem']} gap={'5rem'} px={'.5rem'} >
+            <Flex flex={2}>
+            <Image src={ASSETS.latinAmerica}  w={'100%'} objectFit={'contain'} alt="solarPanels" display={['none', 'none','none','flex']}/>
+            </Flex>
+            <Flex direction={'column'} gap={'1.5rem'} alignItems={'start'} justifyContent={'space-between'} flex={3}>
                 <Text fontFamily="'Lexend', sans-serif" fontWeight={500} fontSize={'1.5rem'} color={'#202122'}>About Us</Text>
                 <Text color={'primeBlue'} fontWeight={500} fontSize={['2rem', '2rem', '3rem', '3.5rem']} lineHeight={['2.5rem', '2.5rem', '3.5rem', '4.5rem']}>
                 From oil and gas, <Text as={'span'} color={'black'}>to mining</Text>, <Text as={'span'} color={'black'}>clean hydrogen</Text> and <Text as={'span'} color={'black'}>renewables</Text>, we deliver <Text as={'span'} color={'black'}>unparalleled</Text> expertise
