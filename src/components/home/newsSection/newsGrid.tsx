@@ -29,7 +29,7 @@ const NewsGrid = () => {
                     _id={blog._id}
                     blog={true}
                     news={true}
-                    link={`/blog/${blog._id}`}
+                    link={`/article/${blog._id}`}
                 />
             ))}
         </SimpleGrid>

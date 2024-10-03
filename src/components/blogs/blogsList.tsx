@@ -155,7 +155,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
               article_type={blog.article_type}
               title={blog.title}
               description={blog.description}
-              link={`/blog/${blog._id}`}
+              link={`/article/${blog._id}`}
               blog={true}
             />
           ))

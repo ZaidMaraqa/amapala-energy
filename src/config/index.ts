@@ -7,8 +7,8 @@ export const PAGES = {
     CONTACT_US: '/contact-us',
     ABOUT_US: '/about-us',
     ABOUT_US_CONSULTING: '/about-us#consultingSection',
-    BLOGS: '/blogs',
-    BLOG: '/blog',
+    BLOGS: '/news',
+    BLOG: '/article',
 };
 
 export default config;
