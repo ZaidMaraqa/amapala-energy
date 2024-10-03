@@ -69,7 +69,7 @@ const ServiceCard = ({
             </Badge>
           )}
           <Flex direction={"column"} gap={"1.5rem"} mt={"1rem"}>
-            {blog && category && readTime && (
+            {blog && category && readTime &&  country &&  country_code && (
               <CardHeader
                 category={category}
                 readTime={readTime}

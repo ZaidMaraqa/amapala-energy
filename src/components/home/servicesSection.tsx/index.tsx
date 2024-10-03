@@ -21,6 +21,9 @@ const ServicesSection = () => {
                         title={service.title}
                         description={service.description}
                         link={service.link}
+                        article_type=""
+                        country=""
+                        country_code=""
                     />
                 ))}
             </SimpleGrid>

@@ -21,9 +21,13 @@ const NewsGrid = () => {
                     imageUrl={blog.image}
                     category={blog.category}
                     readTime={blog.readTime}
+                    country={blog.country}
+                    country_code={blog.country_code}
+                    article_type={blog.article_type}
                     title={blog.title}
                     description={blog.description}
                     _id={blog._id}
+                    blog={true}
                     news={true}
                     link={`/blog/${blog._id}`}
                 />

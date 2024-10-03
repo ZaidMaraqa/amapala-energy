@@ -1,6 +1,9 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Button, Flex, Text } from "@chakra-ui/react"
 import NewsGrid from "./newsGrid";
 import "@fontsource/lexend";
+import Link from "next/link";
+import { PAGES } from "@/config";
+import { FaArrowRight } from "react-icons/fa";
 
 const NewsSection = () => {
     return (
@@ -12,7 +15,23 @@ const NewsSection = () => {
                 Stay <Text as={'span'} color={'black'}>Informed</Text> <br />
                 <Text as={'span'} color={'black'}>Stay</Text> Ahead
             </Text>
-            <NewsGrid />            
+            <NewsGrid />   
+            <Flex justifyContent={'center'} mt={'.5rem'}>
+                <Link href={PAGES.BLOGS} passHref aria-label="blogs page">
+                    <Button
+                        color={'primeBlue'}
+                        fontWeight={600}
+                        fontSize={'1rem'}
+                        variant={'outline'}
+                        borderRadius={'full'}
+                        px={'1rem'}
+                        py={'1.5rem'}
+                        rightIcon={<FaArrowRight />}
+                    >
+                        View All
+                    </Button>
+                </Link>
+            </Flex> 
         </Flex>
     )
 }
