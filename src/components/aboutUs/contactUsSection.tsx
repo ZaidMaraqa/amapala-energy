@@ -7,7 +7,7 @@ import { PAGES } from "@/config";
 
 const ContactUsNewsLetter = () => {
     return (
-        <Flex direction={'column'} bg={'primeBlue'} justifyContent={'center'} px={['.5rem', '1rem', '3rem', '3rem']} py={['3rem', '3rem', '3rem', '6rem']}>
+        <Flex direction={'column'} bg={'primeBlue'} justifyContent={'center'} px={['.5rem', '1rem', '3rem', '3rem']} py={['1.5rem', '2rem', '3rem', '6rem']}>
             <Flex direction={'column'} gap={'3rem'} alignItems={'start'}>
                 <Flex direction={'column'} gap={'.5rem'}>
                     <Heading color={'white'} fontSize={['2.5rem', '4.5rem', '5rem', '6rem']} >Get Involved</Heading>

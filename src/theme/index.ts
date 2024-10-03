@@ -41,8 +41,8 @@ export const theme: Theme = extendTheme(
     breakpoints: {
       sm: '28rem',
       md: '48rem',
-      lg: '80rem',
-      xl: '90rem',
+      lg: '82rem',
+      xl: '92rem',
       '2xl': '96rem',
     },
     colors: {
