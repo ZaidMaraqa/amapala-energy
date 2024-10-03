@@ -9,7 +9,7 @@ import { PAGES } from "@/config";
 const HeroSection = () => {
     return (
         <Flex
-            direction={'row'}
+            direction={['column', 'column', 'row', 'row']}
             bg={'primeGray'}
             justifyContent={'space-between'}
             height={'90vh'}
@@ -79,13 +79,11 @@ const HeroSection = () => {
                     </Button>
                 </Link>
             </Flex>
-            <Flex flex={1}>
+            <Flex  flex={1}>
             <Image
                 src={ASSETS.turbines}
-                objectFit={'cover'}
+                objectFit={['contain', 'contain', 'cover', 'cover']}
                 w={'100%'}
-                borderLeftRadius={10}
-                display={['none', 'none', 'flex', 'flex']}
                 alt="solar panels"
             />
             </Flex>

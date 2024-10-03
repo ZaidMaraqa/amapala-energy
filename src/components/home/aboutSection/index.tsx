@@ -42,7 +42,7 @@ const AboutSection = () => {
         <Text
           color={"primeBlue"}
           fontWeight={500}
-          fontSize={["2rem", "1.5rem", "2rem", "3.5rem"]}
+          fontSize={["2rem", "1.5rem", "2.3rem", "3rem"]}
         >
           From oil and gas,{" "}
           <Text as={"span"} color={"black"}>

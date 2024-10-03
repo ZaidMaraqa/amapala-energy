@@ -11,7 +11,7 @@ const ContactUsNewsLetter = () => {
             <Flex direction={'column'} gap={'3rem'} alignItems={'start'}>
                 <Flex direction={'column'} gap={'.5rem'}>
                     <Heading color={'white'} fontSize={['2.5rem', '4.5rem', '5rem', '6rem']} >Get Involved</Heading>
-                    <Text fontFamily="'Lexend', sans-serif" color={'white'} fontWeight={300}>If you are interested in Latin America, the energy, or natural resource sectors—or all three—feel free to <Link href={PAGES.CONTACT_US} aria-label="contact us link"><Text as={'span'} textDecor={'underline'} fontWeight={700} color={'#FFC125'}>Contact Us</Text></Link> to learn more.</Text>
+                    <Text fontFamily="'Lexend', sans-serif" color={'white'} fontWeight={300}>If you are interested in Latin America, energy and natural resources and/ or the intersection between the two, feel free to <Link href={PAGES.CONTACT_US} aria-label="contact us link"><Text as={'span'} textDecor={'underline'} fontWeight={700} color={'#FFC125'}>Contact Us</Text></Link> to learn more.</Text>
                 </Flex>
                 <Flex direction={'column'} gap={'.5rem'}>
                     <Text color={'white'} fontFamily="'Lexend', sans-serif" fontWeight={300}>

@@ -16,11 +16,10 @@ const NewsLetter = () => {
         <Text
           color={"white"}
           fontWeight={700}
-          fontSize={["2rem", "2.5rem", "3rem", "4rem"]}
-          lineHeight={["2.5rem", "3rem", "3rem", "4.5rem"]}
+          fontSize={["2rem", "2.5rem", "2.5rem", "3rem"]}
           letterSpacing={"-3%"}
         >
-          Subscribe to FAULMATAs monthly Trending Energy Newsletter
+          Subscribe to FAULMATA&apos;s monthly Trending Energy Newsletter
         </Text>
         <Text
           fontFamily="'Lexend', sans-serif"
