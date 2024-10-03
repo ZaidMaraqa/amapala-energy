@@ -25,9 +25,10 @@ import { fetcher } from "@/hooks/fetcher";
 interface FilterPopoverProps {
   setCountry: (value: string) => void;
   setCategory: (value: string) => void;
+  setArticleType: (value: string) => void;
 }
 
-const FilterPopover = ({ setCountry, setCategory }: FilterPopoverProps) => {
+const FilterPopover = ({ setCountry, setCategory, setArticleType }: FilterPopoverProps) => {
   const { data, error, isLoading } = useSWR("/api/getFilters", fetcher);
 
   const { countries = [], categories = [], article_types = [] } = data || {};
@@ -38,6 +39,10 @@ const FilterPopover = ({ setCountry, setCategory }: FilterPopoverProps) => {
 
   const handleCategoryChange = (values: string[]) => {
     setCategory(values.join(","));
+  };
+
+  const handleArticleTypeChange = (values: string[]) => {
+    setArticleType(values.join(","));
   };
 
   if (error) return <div>Failed to load filters</div>;
@@ -130,7 +135,7 @@ const FilterPopover = ({ setCountry, setCategory }: FilterPopoverProps) => {
                 <AccordionIcon color={"primeBlue"} />
               </AccordionButton>
               <AccordionPanel px={"2rem"}>
-                <CheckboxGroup>
+                <CheckboxGroup onChange={handleArticleTypeChange}>
                   <Stack spacing={2}>
                     {article_types?.map((articleType: string) => (
                       <Checkbox key={articleType} value={articleType}>

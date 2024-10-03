@@ -17,5 +17,6 @@ export const ASSETS = {
         faulmata: '/assets/FaulmataIcon.svg',
         microphone: '/assets/microphone.svg',
         location: '/assets/location.svg',
+        noResults: '/assets/noResults.svg',
     },
 };

@@ -9,11 +9,10 @@ import { PAGES } from "@/config";
 const HeroSection = () => {
     return (
         <Flex
-            direction={['column', 'column', 'row', 'row']}
             bg={'primeGray'}
             justifyContent={'space-between'}
             height={'90vh'}
-            minH={'43rem'}
+            minH={'4rem'}
             width={'100vw'}
             overflowX={'hidden'}
         >
@@ -21,9 +20,8 @@ const HeroSection = () => {
                 direction={'column'}
                 justifyContent={'center'}
                 gap={'3rem'}
-                alignItems={['center', 'center', 'flex-start', 'flex-start']}
                 p={'1rem'}
-                pl={['0rem', '1rem', '2rem', '3rem']}
+                pl={['0.5rem', '1rem', '2rem', '3rem']}
                 width={['100%', '100%', '60vw']}
             >
                 <Text
@@ -79,7 +77,7 @@ const HeroSection = () => {
                     </Button>
                 </Link>
             </Flex>
-            <Flex  flex={1}>
+            <Flex  flex={1} display={['none', 'none', 'flex', 'flex']}>
             <Image
                 src={ASSETS.turbines}
                 objectFit={['contain', 'contain', 'cover', 'cover']}

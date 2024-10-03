@@ -1,7 +1,7 @@
 import "@fontsource/lexend";
 
-import { Box, Card, CardBody, CardFooter, Flex, IconButton, Image, Text } from "@chakra-ui/react"
-import config, { PAGES } from "@/config";
+import { Card, CardBody, CardFooter, Flex, IconButton, Image, Text } from "@chakra-ui/react"
+import { PAGES } from "@/config";
 
 import CardHeader from "../cardHeader";
 import { FaChevronRight } from "react-icons/fa";
@@ -13,6 +13,9 @@ export interface BlogCardProps {
     readTime: number;
     title: string;
     description: string;
+    country: string;
+    country_code: string;
+    article_type: string;
     _id: string
 }
 
@@ -21,14 +24,17 @@ const TopBlogCard = ({ image,
     readTime,
     title,
     description,
-    _id
+    country,
+    country_code,
+    article_type,
+    _id,
 }: BlogCardProps) => {
     return (
         <Link href={`${PAGES.BLOG}/${_id}`}>
             <Card direction={'row'} bg={'transparent'} boxShadow={0} role="group" _hover={{ cursor: 'pointer' }}>
                 <CardBody>
                     <Flex direction={'column'} gap={'8px'}>
-                        <CardHeader readTime={readTime} category={category} />
+                        <CardHeader readTime={readTime} category={category} country={country} country_code={country_code} />
                         <Text fontWeight={600} fontSize={'23px'} color={'black'}>{title}</Text>
                         <Text fontFamily="'Lexend', sans-serif" color={'#696D70'} fontWeight={400} fontSize={'20px'} >{description}</Text>
                     </Flex>

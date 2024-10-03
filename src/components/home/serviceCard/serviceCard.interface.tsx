@@ -6,6 +6,9 @@ export interface ServiceCardProps {
     category?: string;
     readTime?: number;
     news?: boolean;
+    country: string;
+    country_code: string;
+    article_type: string;
     blog?: boolean;
     link: string;
 }

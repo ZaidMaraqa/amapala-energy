@@ -21,6 +21,9 @@ const BlogList = () => {
             readTime={blog.readTime}
             title={blog.title}
             description={blog.description}
+            country={blog.country}
+            country_code={blog.country_code}
+            article_type={blog.article_type}
             _id={blog._id}
           />
           <Divider borderColor="#8A9BA8" borderWidth=".0625rem" my={5} />

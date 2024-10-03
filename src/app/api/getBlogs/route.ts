@@ -10,6 +10,7 @@ export async function GET(request: NextRequest) {
         const category = searchParams.get('category') || '';
         const country = searchParams.get('country') || '';
         const pageSize = searchParams.get('pageSize') || '';
+        const articleType = searchParams.get('articleType') || '';
 
         if (!page) {
             return NextResponse.json({ error: "Required params not found." }, { status: 400 });
@@ -26,10 +27,14 @@ export async function GET(request: NextRequest) {
         if (country) {
             apiUrl += `&country=${encodeURIComponent(country)}`;
         }
-
+        if (articleType) {
+            apiUrl += `&article_type=${encodeURIComponent(articleType)}`;
+        }
         if(pageSize){
             apiUrl += `&page_size=${encodeURIComponent(pageSize)}`;
         }
+
+        console.log(apiUrl)
 
         const response = await fetch(apiUrl, {
             method: 'GET',
