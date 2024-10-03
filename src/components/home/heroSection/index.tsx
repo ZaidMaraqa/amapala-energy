@@ -13,6 +13,7 @@ const HeroSection = () => {
             bg={'primeGray'}
             justifyContent={'space-between'}
             height={'90vh'}
+            minH={'43rem'}
             width={'100vw'}
             overflowX={'hidden'}
         >
@@ -52,7 +53,7 @@ const HeroSection = () => {
                     maxWidth={'80%'}
                     textAlign={'start'} 
                 >
-                    Welcome to FAULMATA Energy Insights. Inspired by the history of the town of Amapala, on the Honduran Island La Isla del Tigre, we are the very first dedicated Latin America one-stop-shop energy and natural resource boutique news consultancy.
+                    Welcome to FAULMATA Energy Group. Inspired by the history of the town of Amapala, on the Honduran Island La Isla del Tigre, we are the very first dedicated Latin America one-stop-shop energy and natural resource boutique news consultancy.
                 </Text>
                 <Link href={PAGES.ABOUT_US}>
                     <Button

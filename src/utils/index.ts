@@ -30,18 +30,7 @@ export const splitContentIntoParagraphs = (content: string, numParagraphs: numbe
 };
 
 
-export const getCategoryColor = (category: string) => {
-  switch (category.toLowerCase()) {
-    case "mining":
-      return "#735F32"; // Brown, for Mining
-    case "renewables":
-      return "#009b00"; // Green, for Renewables
-    case "oil and gas":
-      return "#499"; // PrimeBlue for energy-related topics
-    default:
-      return "#87F1EB"; // Default to primeGray
-  }
-};
+
 
 export const getCountryBackgroundColor = (countryCode: string) => {
   switch (countryCode.toUpperCase()) {

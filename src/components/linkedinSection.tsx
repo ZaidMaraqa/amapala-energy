@@ -7,7 +7,7 @@ const LinkedInSection = ({ black = false }) => {
         <Flex gap={'1rem'} alignItems={'center'}>
             {!black && (
                 <Text fontFamily="'Lexend', sans-serif" color={'white'} fontWeight={300}>
-                    Be sure to follow us on <Text as={'span'} fontWeight={700}>LinkedIn</Text> to stay up-to-date on job openings and opportunities
+                    Be sure to follow us on <Text as={'span'} fontWeight={700}>LinkedIn</Text> to stay up-to-date on latest news and job openings 
                 </Text>
             )}
 

@@ -42,9 +42,9 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
   if (error) return <div>Failed to load data {error}</div>;
 
   return (
-    <Flex direction={'column'} gap={'1.5rem'} bg="primeGray" py={'5rem'} px={['.5rem', '3rem', '3rem', '3rem']}>
+    <Flex direction={'column'} gap={['1.5rem']} bg="primeGray" py={['2rem', '3rem', '3rem', '5rem']} px={['.5rem', '3rem', '3rem', '3rem']}>
       {!isSpecficBlog ? (
-        <Flex direction={'row'} justifyContent={'space-between'} alignItems={'center'}>
+        <Flex direction={['column', 'column', 'row', 'row']} justifyContent={'space-between'} alignItems={['start', 'start', 'center', 'center']}>
           <Flex direction={'column'} gap={'1.5rem'} flex={2}>
             <Text fontFamily="'Lexend', sans-serif" fontSize={'1.5rem'} fontWeight={500} color={'#202122'}>
               News and Analysis
@@ -55,7 +55,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
             </Text>
           </Flex>
 
-          <Flex direction={'row'} gap={'.5rem'} flex={1}>
+          <Flex direction={'row'} gap={'.5rem'} flex={1} mt={['1rem', '1rem', '0rem', '0rem']}>
             <Input
               placeholder={`Search articles... (${totalPosts} posts)`}
               value={search}

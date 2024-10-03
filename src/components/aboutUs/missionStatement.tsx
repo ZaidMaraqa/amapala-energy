@@ -46,9 +46,9 @@ const MissionStatement = ({ title, content, image, right }: MissionStatementProp
                                 <Text
                                     mb={index < content.length - 1 ? 4 : 0}
                                     fontFamily="'Lexend', sans-serif"
-                                    color={title === 'Our Mission' ? '#202122': '#5C6770'}
+                                    color={'#202122'}
                                     fontWeight={500}
-                                    fontSize={["1.5rem", "1.25rem", "1.45rem", "1.5rem"]}
+                                    fontSize={["1.5rem", "1.25rem", "1.25rem", "1.5rem"]}
                                     {...props}
                                 />
                             ),

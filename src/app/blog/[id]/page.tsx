@@ -19,7 +19,7 @@ import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import React from "react";
 import Flag from "react-world-flags";
-import { formatDate, getCategoryColor, getCountryBackgroundColor, splitContentIntoParagraphs } from "@/utils";
+import { formatDate, getCountryBackgroundColor, splitContentIntoParagraphs } from "@/utils";
 import { useRouter } from "next/navigation";
 import useGetBlog from "@/hooks/getBlog";
 import LinkedInSection from "@/components/linkedinSection";
@@ -57,7 +57,7 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
             <Image src={data.image} w={'21.875rem'} alt="blog related pic" borderRadius={'.5rem'} />
             <Flex direction={'column'} gap={'1rem'} px={['0rem', '.5rem', '1rem', '1rem']} justifyContent={'space-between'}>
               <Flex direction={'row'} alignItems={'center'} gap={'.5rem'} mt={'1rem'}>
-                <Badge bg={getCategoryColor(data.category)} p={'.5rem'} borderRadius={'.25rem'} height={'100%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                <Badge bg={'primeBlue'} p={'.5rem'} borderRadius={'.25rem'} height={'100%'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
                   <Text fontWeight={600} fontSize={['.75rem', '1rem', '1rem', '1rem']} color={'white'}>{data.category}</Text>
                 </Badge>
                 <Flex alignItems={'center'} gap={'.5rem'} bg={getCountryBackgroundColor(data.country_code)} p={'.45rem'} borderRadius={'.25rem'}>

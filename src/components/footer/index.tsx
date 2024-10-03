@@ -39,7 +39,7 @@ const Footer = () => {
                     ))}
                 </Flex>
             </Flex>
-            <Text color={'black'} fontWeight={600} fontSize={'1.25rem'} textAlign={'center'}>© 2024 FAULMATA Energy Insights Limited. All rights reserved.</Text>
+            <Text color={'black'} fontWeight={600} fontSize={'1.25rem'} textAlign={'center'}>© 2024 FAULMATA Energy Group Limited. All rights reserved.</Text>
         </Flex>
     );
 }
