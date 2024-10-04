@@ -10,7 +10,7 @@ const NewsLetter = () => {
       bg={"primeBlue"}
       justifyContent={"center"}
       px={["1rem", "3rem", "4rem", "5rem"]}
-      py={["4rem", "3rem", "4rem", "7rem"]}
+      py={["2.5rem", "3rem", "3rem", "6rem"]}
     >
       <Flex direction={"column"} gap={"1.5rem"} alignItems={"start"}>
         <Text

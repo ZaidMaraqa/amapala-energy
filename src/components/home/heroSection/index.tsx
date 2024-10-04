@@ -12,7 +12,7 @@ const HeroSection = () => {
             bg={'primeGray'}
             justifyContent={'space-between'}
             height={'90vh'}
-            minH={'4rem'}
+            minH={'50rem'}
             width={'100vw'}
             overflowX={'hidden'}
         >
