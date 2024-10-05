@@ -34,12 +34,12 @@ const TopBlogCard = ({ image,
             <Card direction={'row'} bg={'transparent'} boxShadow={0} role="group" _hover={{ cursor: 'pointer' }}>
                 <CardBody>
                     <Flex direction={'column'} gap={'8px'}>
-                        <CardHeader readTime={readTime} category={category} country={country} country_code={country_code} />
+                        <CardHeader readTime={readTime} category={category} country={country} country_code={country_code} article_type={article_type} />
                         <Text fontWeight={600} fontSize={'23px'} color={'black'}>{title}</Text>
                         <Text fontFamily="'Lexend', sans-serif" color={'#696D70'} fontWeight={400} fontSize={'20px'} >{description}</Text>
                     </Flex>
                     <CardFooter px={0} pb={0} pt={'2.5rem'}>
-                        <Flex gap={'16px'} alignItems={'center'} justifyContent={'flex-start'}>
+                        <Flex gap={'1rem'} alignItems={'center'} justifyContent={'flex-start'}>
                             <Text color={'black'} fontSize={'24px'} fontWeight={600} _groupHover={{ textDecoration: 'underline' }}>Read Full Article</Text>
                             <IconButton
                                 borderRadius={'50%'}
