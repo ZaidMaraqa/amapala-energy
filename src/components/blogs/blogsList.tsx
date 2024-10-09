@@ -143,7 +143,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
       )}
 
       <SimpleGrid columns={[1, 1, 2, 3, 3]} spacing={10} mt={"1rem"}>
-        {data?.blogs.length > 0 ? (
+        {data?.blogs?.length > 0 ? (
           data.blogs.map((blog: any, index: number) => (
             <ServiceCard
               key={index}
