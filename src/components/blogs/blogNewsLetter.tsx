@@ -1,14 +1,16 @@
-import { Box, Flex, Text } from "@chakra-ui/react"
+import { Flex, Text } from "@chakra-ui/react"
 
 import NewsletterForm from "../home/newsLetter/newsLetterForm"
+import LinkedInSection from "../linkedinSection"
 
 const BlogNewsLetter = () => {
     return (
         <Flex direction={'column'}  gap={'1rem'}>
             <Text fontWeight={600} fontSize={'1.5rem'}>Like what you are seeing? Subscribe to our newsletter to stay updated with the latest articles, insights, and more!</Text>
-            <Box w={['100%', '75%', '50%', '50%']}>
+            <Flex w={['100%', '75%', '50%', '50%']} gap={'1rem'} direction={'column'} >
                 <NewsletterForm color="primeBlue" />
-            </Box>
+                <LinkedInSection black={true} />
+            </Flex>
         </Flex>
     )
 }

@@ -7,6 +7,7 @@ interface CardHeaderProps {
   readTime: number;
   country: string;
   country_code: string;
+  article_type?: string;
 }
 
 const CardHeader = ({
@@ -14,6 +15,7 @@ const CardHeader = ({
   readTime,
   country,
   country_code,
+  article_type,
 }: CardHeaderProps) => {
   return (
     <Flex
@@ -52,6 +54,16 @@ const CardHeader = ({
       >
         <Text color={"white"}>{category}</Text>
       </Box>
+      {article_type && (
+        <Box
+          bg={"primeBlue"}
+          borderRadius={".3125rem"}
+          py={".25rem"}
+          px={".5rem"}
+        >
+          <Text color={"white"}>{article_type}</Text>
+        </Box>
+      )}
       <Text color={"black"}>{readTime}</Text>
     </Flex>
   );

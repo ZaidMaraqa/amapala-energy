@@ -5,11 +5,10 @@ import {
   Image,
   Input,
   SimpleGrid,
-  Spinner,
   Text,
 } from "@chakra-ui/react";
 
-import FilterPopover from "./filterPopover";
+import FilterPopover from "./filter/filterPopover";
 import Paginator from "../paginator";
 import ServiceCard from "../home/serviceCard";
 import { useDebounce } from "use-debounce";
@@ -54,6 +53,7 @@ const BlogList = ({ isSpecficBlog }: BlogListProps) => {
   const totalPages = Math.ceil(totalPosts / pageSize);
 
   if (error) return <div>Failed to load data {error}</div>;
+  
 
   return (
     <Flex

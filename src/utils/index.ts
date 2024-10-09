@@ -38,6 +38,8 @@ export const getCountryBackgroundColor = (countryCode: string) => {
       return "blue.200"; // Light blue and white
     case "BR": // Brazil
       return "green.400"; // Green and yellow
+    case "BZ": // Brazil
+      return "blue.400"; // Green and yellow
     case "CL": // Chile
       return "red.300"; // Red, white, and blue
     case "CO": // Colombia
@@ -52,7 +54,11 @@ export const getCountryBackgroundColor = (countryCode: string) => {
       return "#F4C430";
     case "PA": // Venezuela
       return "#C96868";
+    case "NI": // Venezuela
+      return "blue.400";
+    case "SV": // Venezuela
+      return "blue.500";
     default:
-      return "#C8D0D6"; // Default to primeGray for countries not in the list
+      return "#C8D0D6"; 
   }
 };
