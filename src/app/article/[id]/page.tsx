@@ -5,7 +5,6 @@ import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import BlogList from "@/components/blogs/blogsList";
 import BlogNewsLetter from "@/components/blogs/blogNewsLetter";
-import { splitContentIntoParagraphs } from "@/utils";
 import useGetBlog from "@/hooks/getBlog";
 import LoadingSpinner from "@/components/article/loadingSpinner";
 import BackButton from "@/components/article/backButton";
@@ -19,8 +18,6 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
   if (isLoading) return <LoadingSpinner />;
   if (error) return <div>Failed to load data</div>;
 
-  const paragraphs = splitContentIntoParagraphs(data.content, 3);
-
   return (
     <Flex direction={"column"} h={"100vh"}>
       <NavBar />
@@ -29,7 +26,7 @@ const BlogOverview = ({ params }: { params: { id: string } }) => {
           <BackButton />
           <BlogHeader data={data} />
         </Flex>
-        <BlogContent paragraphs={paragraphs} />
+        <BlogContent content={data.content} />
         <Flex direction={"column"} gap={"1rem"} p={"2rem"} borderTop={"1px solid #8A9BA8"}>
           <BlogNewsLetter />
         </Flex>

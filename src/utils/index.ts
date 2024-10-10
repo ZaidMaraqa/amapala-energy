@@ -11,27 +11,6 @@ export function formatDate(dateString: string) {
   return date.toLocaleDateString("en-US", options);
 }
 
-export const splitContentIntoParagraphs = (content: string, numParagraphs: number): string[] => {
-  // Split the content into lines and filter out empty lines
-  const lines = content.split('.').filter((line) => line.trim() !== '');
-
-  // Calculate the number of lines per paragraph
-  const linesPerParagraph = Math.ceil(lines.length / numParagraphs);
-
-  // Generate the paragraphs by slicing the lines
-  const paragraphs = [];
-  for (let i = 0; i < numParagraphs; i++) {
-    const start = i * linesPerParagraph;
-    const end = start + linesPerParagraph;
-    paragraphs.push(lines.slice(start, end).join('. ') + '.');
-  }
-
-  return paragraphs;
-};
-
-
-
-
 export const getCountryBackgroundColor = (countryCode: string) => {
   switch (countryCode.toUpperCase()) {
     case "AR": // Argentina
